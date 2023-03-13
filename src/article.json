@@ -1,0 +1,46 @@
+{
+	"contributors": [
+		{
+			"name": "Ayesha Tandon", 
+			"role": "author",
+			"email": "ayesha.tandon@carbonbrief.com",
+			"url": "https://www.carbonbrief.org/author/ayeshatandon/"
+		},
+		{
+			"name": "Roz Pidcock",
+			"role": "author",
+			"url": "https://www.carbonbrief.org/author/rozpidcock/"
+		},
+		{
+			"name": "Tom Pearson",
+			"role": "design",
+			"url": "https://www.carbonbrief.org/author/tompearson/"
+		},
+		{
+			"name": "Tom Prater",
+			"role": "design",
+			"url": "https://www.carbonbrief.org/author/tomprater/"
+		}
+	],
+	"title": "Interactive page template",
+	"description": "Template for making pages",
+	"url": "https://interactive.carbonbrief.org",
+	"pubDate": "2022-12-08",
+	"modifiedDate": "2022-12-08",
+	"og":{
+		"description": "",
+		"locale": "en_GB",
+		"type": "article",
+		"image": {
+			"url": "https://interactive.carbonbrief.org/polar-bears-climate-change-what-does-science-say/images/social-images/polar-bear-hero-social.jpg",
+			"width": 1200,
+			"height": 630,
+			"type": "image/png"
+		}
+	},
+	"twitter":{
+		"card":"summary_large_image",
+		"creator":"@carbonbrief",
+		"site":"@carbonbrief"
+	}
+}

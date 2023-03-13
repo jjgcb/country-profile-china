@@ -1,0 +1,1 @@
+embedable pages are pages which don't have headers, footers or any of that stuff

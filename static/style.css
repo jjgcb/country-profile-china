@@ -1,0 +1,274 @@
+/* global colours, spacing, fonts and utitlity classes */
+
+:root {
+	--color-primary-text: #333333;
+	--color-supplementary-text: #666666;
+	--color-primary-background: #ffffff;
+	--color-dark-background: #333333;
+	--color-light-background: #ffffff;
+	--color-light-text: #fffaf0;
+	--color-link: #4c9fd5;
+	--color-trace-grey: #eeeeee;
+	--color-pale-grey: #dddddd;
+	/* primary chart colors */
+	--color-dark-blue: #0b4572;
+	--color-yellow: #efc530;
+	--color-light-blue: #2f8fce;
+	--color-red: #c7432b;
+	--color-light-grey: #999999;
+	--color-lilac: #a14a7b;
+	--color-orange: #df9239;
+	/* secondary chart colors*/
+	--color-indigo: #673b9b;
+	--color-pale-pink: #ffada9;
+	--color-pale-blue: #ade2ea;
+	--color-brown: #7c5641;
+
+	/* measurements */
+	--page-max-width: 1270px;
+	--readable-max-width: 780px;
+
+	--border-thin: 1px;
+	--border-thick: 4px;
+	
+	--ratio: 1.5;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+	--measure: 40rem;
+
+	--serif: "Pt serif", "Times New Roman", Times, serif;
+	--sans-serif: "PT Sans", Helvetica, sans-serif;
+	--sans-serif-narrow: "PT Sans Narrow" , Helvetica, sans-serif;
+}
+
+/*CSS Reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+figcaption{
+	font-family: var(--sans-serif);
+	font-size: var(--s0);
+	color: var(--color-supplementary-text);
+	margin-right: var(--s4);
+	line-height: var(--s1);
+	margin-top: var(--s-5);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+/* end CSS reset */
+
+body {
+	color: var(--color-primary-text);
+	background-color: var(--color-primary-background);
+	font-family: var(--sans-serif);
+	font-size: 12px;
+}
+
+a {
+	/* color: var(--color-link); */
+	color: #0C2635;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: var(--color-link);
+}
+
+.screenreader-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/* "every layout" based stuff */
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.stack > * {
+	margin-block: 0;
+}
+
+.stack > * + * {
+	margin-block-start: var(--s1, 1.5rem);
+}
+
+.center {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-inline-size: var(--page-max-width);
+}
+
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--s0);
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.box {
+	padding: var(--s0);
+	outline: 0.125rem solid transparent;
+	outline-offset: -0.125rem;
+}
+
+.cluster,
+.cluster-end {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space, 1rem);
+	align-items: center;
+}
+
+.cluster-end {
+	justify-content: flex-end;
+}
+
+.cluster {
+	justify-content: flex-start;
+}
+
+/* typography */
+
+h1 {
+	font-family: var(--serif);
+	font-size: 3.25rem;
+	line-height: 4.25rem;
+}
+
+code {
+	background-color: var(--color-pale-blue);
+}
+
+p,li {
+	font-family: var(--serif);
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	box-sizing: content-box;
+	width: 100%;
+	max-width: var(--readable-max-width);
+}
+
+article h2,
+article .subtitle,
+article p,
+article li{
+	box-sizing: content-box;
+	width: 100%;
+	max-width: var(--readable-max-width);
+	margin: auto;
+}
+
+article h2{
+	font-size: var(--s2);
+	font-family: var(--sans-serif-narrow);
+	font-weight: 700;
+}
+
+blockquote {
+	width: 100%;
+	max-width: var(--readable-max-width);
+	margin: auto;
+}
+
+blockquote p{
+	padding-left: var(--s1);
+	padding-right: var(--s2);
+	border-left: var(--border-thick) solid #0C2635;	
+	width: auto;
+}
+
+p.caption{
+	font-family: var(--sans-serif);
+	font-size: var(--s0);
+	color: var(--color-supplementary-text);
+	line-height: var(--s1);
+	margin-top: var(--s-5);
+}
