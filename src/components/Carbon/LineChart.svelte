@@ -1,7 +1,7 @@
 <script>
 	import Watermark from './Watermark.svelte';
 	import { scaleLinear, scaleTime, line, extent, ticks } from 'd3';
-	import { darkGrey, lightBlue, red } from "$carbon/lib/cbColors";
+	import { darkGrey, lightGrey, red } from "$carbon/lib/cbColors";
 
 	export let width = 720;
 	export let height = 600;
@@ -12,8 +12,8 @@
 	export let dateFormat = d=>d;
 	export let valueFormat = d=>d;
 	export let dateExtent;
-	export let lineColors = [ red, lightBlue ];
-	export let lineThickness = 3;
+	export let lineColors = [ lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,lightGrey,red,lightGrey,lightGrey,lightGrey,lightGrey ];
+	export let lineThickness = [ 2 ];
 
 	let plotWidth = width - (margin.left + margin.right);
 	let plotHeight = height - (margin.top + margin.bottom);

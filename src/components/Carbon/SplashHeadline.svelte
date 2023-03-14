@@ -2,6 +2,7 @@
 	export let headline = 'Headline goes here';
 	export let credits = [];
 	export let publishDate = new Date();
+	export let updatedDate = new Date();
 	export let image;
 	export let backgroundPositionX = "center"; //center/left/right
 	export let backgroundPositionY = "center"; // bottom/center/top
@@ -39,6 +40,12 @@
 						month: 'long',
 						day: 'numeric'
 					})}</time>
+					<span class="last-updated">Last updated:</span>
+					<time datetime={updatedDate}>{updatedDate.toLocaleDateString('en-GB', {
+					year: 'numeric',
+					month: 'long',
+					day: 'numeric'
+				})}</time>
 			</p>
 		</div>
 	</div>
@@ -104,6 +111,10 @@
 		padding-right:var(--s-1);
 		float: right;
 		font-weight: bold;
+	}
+
+	.last-updated{
+		margin-left: 2em;
 	}
 
 	@media (max-width:810px){
