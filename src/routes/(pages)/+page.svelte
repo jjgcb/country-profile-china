@@ -14,17 +14,52 @@ import { timeFormat } from 'd3';
 import LoremIpsum from "$copy/LoremIpsum.md";
 	import ContinuousColorKey from "../../components/Carbon/ContinuousColorKey.svelte";
 // import Select from "$carbon/Select.svelte";
-import Select from 'svelte-select';
+
+// import { onMount } from 'svelte';
+// import { browser } from '$app/environment';
+// import * as topojson from 'topojson-client';
+// import GlobeLocator from "$components/GlobeLocator.svelte";
 
 // "data" is an object containing parsed data objects from static/data.
 // we won't always want to load the data statically, [particularly if it's very large]
 export let data;
-let items = [
-        { value: 'Aus', label: 'Aus', class: 'aus'},
-        { value: 'Bra', label: 'Bra', class: 'bra'},
-        { value: 'Chi', label: 'Chi', class: 'chi'},
+let countries = [
+        { value: 'Aus', text: 'Aus', class: 'aus'},
+        { value: 'Bra', text: 'Bra', class: 'bra'},
+        { value: 'Chi', text: 'Chi', class: 'chi'},
     ];
+// let value = {value: ''};
+
+let selected;
+let current = 'foo';
+let response = '';
 console.log(`PRE LOADED DATA`, Object.keys(data))
+
+// let mapdata={
+//     land: {},
+//     borders: {},
+//     outline: {type: "Sphere"},
+//     countryLookup: {}
+// }
+
+// onMount(()=>{
+//     if(browser){
+//         fetch('data/iso-110m.topo.json')
+//             .then(res=>res.json())
+//             .then(topo=>{
+//                 mapdata.land = topojson.feature(topo, topo.objects.land).features[0];
+//                 let countryEntries = topojson.feature(topo, topo.objects.countries)
+//                     .features.map(feature=>{
+//                         return [feature.properties.iso, feature]
+//                     });
+//                 mapdata.countryLookup = Object.fromEntries(countryEntries);
+//                 mapdata.borders = topojson.mesh(topo, topo.objects.countries);
+//                 mapdata = mapdata;
+//             })
+//     }
+// });
+
+// let locatorCountry = "USA";
 
 </script>
 <div class="stack" id="top">
@@ -40,11 +75,26 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
     </SplashHeadline>
     <article class="stack box">
 
-        <div class="profile-selector-container {items.class}">
+        <div class="profile-selector-container" id={console.log(selected)}>
+
             <p>Carbon Brief Country Profiles</p>
             <p>Select a country from the series</p>
-        <Select {items}></Select>
-        <p>{items.label}</p>
+        <!-- <Select {items} bind:value>Select a country</Select> -->
+        <!-- <p>{value.value}</p> -->
+        <select bind:value={selected} on:change="{() => response = ''}">
+            {#each countries as country}
+                <option value={country}>
+                    {country.text}
+                </option>
+            {/each}
+        </select>
+        <p>{selected ? selected.value : '[waiting...]'}</p>
+        <!-- <div class="cluster">
+            <button on:click={()=>locatorCountry="TTO" }>Trinidad and Tobago</button>
+            <button on:click={()=>locatorCountry="UKR" }>Ukraine</button>
+            <button on:click={()=>locatorCountry="IND" }>India</button>
+        </div>
+        <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator> -->
         </div>
 
         
@@ -69,6 +119,13 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
             lineProperties={['Australia','Brazil','Canada','France','India','Indonesia','Iran','Japan','Mexico','Nigeria','Russia','Pakistan','South Africa','South Korea','Turkey','United States']}
             timeAccessor={row=>new Date(row.Year)}></LineChart>
         </ChartFrame>
+
+
+        <img class="wide" src="images/pakistan-triptych.png"/>
+
+        <LoremIpsum/>
+
+        <img class="inline" src="images/flooding-death-toll.png"/>
         
        
     </article>
@@ -79,6 +136,9 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
         border: solid 1px grey;
         max-height: 300px;
         padding: 3em;
+        width: 100%;
+        max-width: var(--readable-max-width);
+        margin: auto;
     }
 
     article{
@@ -99,6 +159,17 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
         /* width:100%; */
         box-sizing: content-box;
         margin-inline: auto;
+    }
+    img.inline{
+            margin: 0 auto;
+            max-width: 780px;
+            width: 100%;
+        }
+
+    img.wide{
+        margin: 0 auto;
+        max-width: var(--page-max-width);
+        width: 100%;
     }
     figcaption{
         color: var(--color-light-text);

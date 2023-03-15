@@ -25,6 +25,9 @@
 	.chart-frame {
 		font-family: var(--sans-serif);
 		background-color: white;
+		width: 100%;
+		max-width: var(--readable-max-width);
+		margin: 0 auto;
 	}
 
 	.source,
