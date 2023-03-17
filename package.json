@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-select": "^5.5.2"
+		"svelte-select": "^5.5.2",
+		"topojson-client": "^3.1.0"
 	}
 }

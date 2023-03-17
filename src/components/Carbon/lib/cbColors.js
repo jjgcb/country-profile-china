@@ -1,8 +1,10 @@
 import { interpolateHcl } from 'd3';
 
 /* primary chart colors */
+export const white = 'rgba(255,255,255,1)';
 export const lightBlue = 'rgba(47, 143, 206, 1)';
 export const darkBlue = 'rgba(11, 69, 114, 1)';
+export const veryDarkBlue = 'rgba(11, 69, 114, 1)';
 export const yellow = 'rgba(239, 197, 48, 1)';
 export const red = 'rgba(199, 67, 43, 1)';
 export const lightGrey = 'rgba(153, 153, 153, 1)';

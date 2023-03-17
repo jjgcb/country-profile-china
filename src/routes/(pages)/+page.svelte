@@ -15,10 +15,10 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 	import ContinuousColorKey from "../../components/Carbon/ContinuousColorKey.svelte";
 // import Select from "$carbon/Select.svelte";
 
-// import { onMount } from 'svelte';
-// import { browser } from '$app/environment';
-// import * as topojson from 'topojson-client';
-// import GlobeLocator from "$components/GlobeLocator.svelte";
+import { onMount } from 'svelte';
+import { browser } from '$app/environment';
+import * as topojson from 'topojson-client';
+import GlobeLocator from "$components/GlobeLocator.svelte";
 
 // "data" is an object containing parsed data objects from static/data.
 // we won't always want to load the data statically, [particularly if it's very large]
@@ -35,31 +35,31 @@ let current = 'foo';
 let response = '';
 console.log(`PRE LOADED DATA`, Object.keys(data))
 
-// let mapdata={
-//     land: {},
-//     borders: {},
-//     outline: {type: "Sphere"},
-//     countryLookup: {}
-// }
+let mapdata={
+    land: {},
+    borders: {},
+    outline: {type: "Sphere"},
+    countryLookup: {}
+}
 
-// onMount(()=>{
-//     if(browser){
-//         fetch('data/iso-110m.topo.json')
-//             .then(res=>res.json())
-//             .then(topo=>{
-//                 mapdata.land = topojson.feature(topo, topo.objects.land).features[0];
-//                 let countryEntries = topojson.feature(topo, topo.objects.countries)
-//                     .features.map(feature=>{
-//                         return [feature.properties.iso, feature]
-//                     });
-//                 mapdata.countryLookup = Object.fromEntries(countryEntries);
-//                 mapdata.borders = topojson.mesh(topo, topo.objects.countries);
-//                 mapdata = mapdata;
-//             })
-//     }
-// });
+onMount(()=>{
+    if(browser){
+        fetch('data/iso-110m.topo.json')
+            .then(res=>res.json())
+            .then(topo=>{
+                mapdata.land = topojson.feature(topo, topo.objects.land).features[0];
+                let countryEntries = topojson.feature(topo, topo.objects.countries)
+                    .features.map(feature=>{
+                        return [feature.properties.iso, feature]
+                    });
+                mapdata.countryLookup = Object.fromEntries(countryEntries);
+                mapdata.borders = topojson.mesh(topo, topo.objects.countries);
+                mapdata = mapdata;
+            })
+    }
+});
 
-// let locatorCountry = "USA";
+let locatorCountry = "USA";
 
 </script>
 <div class="stack" id="top">
@@ -93,8 +93,8 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
             <button on:click={()=>locatorCountry="TTO" }>Trinidad and Tobago</button>
             <button on:click={()=>locatorCountry="UKR" }>Ukraine</button>
             <button on:click={()=>locatorCountry="IND" }>India</button>
-        </div>
-        <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator> -->
+        </div> -->
+        <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
         </div>
 
         
