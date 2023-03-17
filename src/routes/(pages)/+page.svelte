@@ -15,18 +15,32 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 	import ContinuousColorKey from "../../components/Carbon/ContinuousColorKey.svelte";
 // import Select from "$carbon/Select.svelte";
 
-// import { onMount } from 'svelte';
-// import { browser } from '$app/environment';
-// import * as topojson from 'topojson-client';
-// import GlobeLocator from "$components/GlobeLocator.svelte";
+import { onMount } from 'svelte';
+import { browser } from '$app/environment';
+import * as topojson from 'topojson-client';
+import GlobeLocator from "$components/GlobeLocator.svelte";
 
 // "data" is an object containing parsed data objects from static/data.
 // we won't always want to load the data statically, [particularly if it's very large]
 export let data;
 let countries = [
-        { value: 'Aus', text: 'Aus', class: 'aus'},
-        { value: 'Bra', text: 'Bra', class: 'bra'},
-        { value: 'Chi', text: 'Chi', class: 'chi'},
+        { iso: 'XXX', val: 'Select a country', text: '', class: ''},
+        { iso: 'AUS', val: 'Australia', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
+        { iso: 'BRA', val: 'Brazil', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
+        { iso: 'CAN', val: 'Canada', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'FRA', val: 'France', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
+        { iso: 'IND', val: 'India', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
+        { iso: 'IDN', val: 'Indonesia', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'IRN', val: 'Iran', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
+        { iso: 'JPN', val: 'Japan', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
+        { iso: 'MEX', val: 'Mexico', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'NGA', val: 'Nigeria', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
+        { iso: 'RUS', val: 'Russia', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
+        { iso: 'PAK', val: 'Pakistan', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'ZAF', val: 'South Africa', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'KOR', val: 'South Korea', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'TUR', val: 'Turkey', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
+        { iso: 'USA', val: 'United States', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
     ];
 // let value = {value: ''};
 
@@ -35,32 +49,36 @@ let current = 'foo';
 let response = '';
 console.log(`PRE LOADED DATA`, Object.keys(data))
 
-// let mapdata={
-//     land: {},
-//     borders: {},
-//     outline: {type: "Sphere"},
-//     countryLookup: {}
-// }
+let mapdata={
+    land: {},
+    borders: {},
+    outline: {type: "Sphere"},
+    countryLookup: {}
+}
 
-// onMount(()=>{
-//     if(browser){
-//         fetch('data/iso-110m.topo.json')
-//             .then(res=>res.json())
-//             .then(topo=>{
-//                 mapdata.land = topojson.feature(topo, topo.objects.land).features[0];
-//                 let countryEntries = topojson.feature(topo, topo.objects.countries)
-//                     .features.map(feature=>{
-//                         return [feature.properties.iso, feature]
-//                     });
-//                 mapdata.countryLookup = Object.fromEntries(countryEntries);
-//                 mapdata.borders = topojson.mesh(topo, topo.objects.countries);
-//                 mapdata = mapdata;
-//             })
-//     }
-// });
+onMount(()=>{
+    if(browser){
+        fetch('data/iso-110m.topo.json')
+            .then(res=>res.json())
+            .then(topo=>{
+                mapdata.land = topojson.feature(topo, topo.objects.land).features[0];
+                let countryEntries = topojson.feature(topo, topo.objects.countries)
+                    .features.map(feature=>{
+                        return [feature.properties.iso, feature]
+                    });
+                mapdata.countryLookup = Object.fromEntries(countryEntries);
+                mapdata.borders = topojson.mesh(topo, topo.objects.countries);
+                mapdata = mapdata;
+            })
+    }
+});
 
-// let locatorCountry = "USA";
-
+let emptyPlaceholder = '<div class="emptyPlaceholder"></div>';
+let locatorCountry = '';
+// let countrySlug;
+let profileLink = "https://www.carbonbrief.org/the-carbon-brief-profile-";
+let readMore = '<a href="'+profileLink;
+let readMore2 = '">Read more</a>';
 </script>
 <div class="stack" id="top">
     <SplashHeadline 
@@ -76,25 +94,29 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
     <article class="stack box">
 
         <div class="profile-selector-container" id={console.log(selected)}>
+            <div class="profile-heading">
+                <p>Carbon Brief Country Profiles</p>
+                <p>Select a country from the series</p>
+                <select name="countryProfiles" bind:value={selected} on:change="{() => response = ''}" on:change={()=>locatorCountry=selected.iso }>
+                {#each countries as country}
+                    <option value={country}>
+                        {country.val}
+                    </option>
+                {/each}
+                </select>
+            </div>
+            <div class="globe">
+                <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
+            </div>
+            <div class="country-intro">
+                <!-- {#if countries[0].iso != 'XXX'}                 -->
+                <!-- {console.log(countries[0].iso)} -->
+                <!-- {:else} -->
+                <p>{@html selected ? selected.text+' '+readMore+selected.val+readMore2 : ""}</p>
+                <!-- {/if} -->
 
-            <p>Carbon Brief Country Profiles</p>
-            <p>Select a country from the series</p>
-        <!-- <Select {items} bind:value>Select a country</Select> -->
-        <!-- <p>{value.value}</p> -->
-        <select bind:value={selected} on:change="{() => response = ''}">
-            {#each countries as country}
-                <option value={country}>
-                    {country.text}
-                </option>
-            {/each}
-        </select>
-        <p>{selected ? selected.value : '[waiting...]'}</p>
-        <!-- <div class="cluster">
-            <button on:click={()=>locatorCountry="TTO" }>Trinidad and Tobago</button>
-            <button on:click={()=>locatorCountry="UKR" }>Ukraine</button>
-            <button on:click={()=>locatorCountry="IND" }>India</button>
-        </div>
-        <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator> -->
+                <!-- <p>{@html selected ?  : emptyPlaceholder }</p> -->
+            </div>
         </div>
 
         
@@ -131,7 +153,11 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
     </article>
 </div>
 <style>
-
+.country-intro{
+        /* border: solid red 2px; */
+        height: 108px;
+        width: 100%;
+    }
     .profile-selector-container{
         border: solid 1px grey;
         max-height: 300px;
@@ -139,6 +165,28 @@ console.log(`PRE LOADED DATA`, Object.keys(data))
         width: 100%;
         max-width: var(--readable-max-width);
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        align-items: flex-start;
+    }
+    .profile-heading{
+        margin-top:5em
+    }
+    select{
+        width: 66%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 1.4em;
+        padding-left:0.3em;
+    }
+    .globe{
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        margin-right: 0;
+        position: relative;
+        top: 0.5em;
     }
 
     article{
