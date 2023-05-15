@@ -26,7 +26,7 @@ export let data;
 let countries = [
         { iso: 'XXX', val: 'Select a country', text: '', class: ''},
         { iso: 'AUS', val: 'Australia', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
-        { iso: 'BRA', val: 'Brazil', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
+        { iso: 'BRA', val: 'Brazil', text: 'Brazil, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
         { iso: 'CAN', val: 'Canada', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'chi'},
         { iso: 'FRA', val: 'France', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'aus'},
         { iso: 'IND', val: 'India', text: 'Australia, a country in the top 20 for greenhouse gas emissions, is the world’s second largest coal exporter. First published: April 2019.', class: 'bra'},
@@ -44,7 +44,7 @@ let countries = [
     ];
 // let value = {value: ''};
 
-let selected;
+let selected = '';
 let current = 'foo';
 let response = '';
 console.log(`PRE LOADED DATA`, Object.keys(data))
@@ -93,7 +93,7 @@ let readMore2 = '">Read more</a>';
     </SplashHeadline>
     <article class="stack box">
 
-        <div class="profile-selector-container" id={console.log(selected)}>
+        <div class="profile-selector-container" id={selected}>
             <div class="profile-heading">
                 <p>Carbon Brief Country Profiles</p>
                 <p>Select a country from the series</p>
@@ -109,13 +109,14 @@ let readMore2 = '">Read more</a>';
                 <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
             </div>
             <div class="country-intro">
-                <!-- {#if countries[0].iso != 'XXX'}                 -->
-                <!-- {console.log(countries[0].iso)} -->
-                <!-- {:else} -->
-                <p>{@html selected ? selected.text+' '+readMore+selected.val+readMore2 : ""}</p>
-                <!-- {/if} -->
+                    {#if countries[0].iso != 'XXX'}             
+                    {console.log(countries[0].iso)}
+                    <p>{@html selected ? emptyPlaceholder : emptyPlaceholder }</p>
+                    {:else}
+                    <p>{@html selected ? selected.text+' '+readMore+selected.val+readMore2 : ""}</p>
+                    {/if}
 
-                <!-- <p>{@html selected ?  : emptyPlaceholder }</p> -->
+                <!-- <p>{@html selected ? emptyPlaceholder : emptyPlaceholder }</p> -->
             </div>
         </div>
 
@@ -162,6 +163,7 @@ let readMore2 = '">Read more</a>';
         border: solid 1px grey;
         max-height: 300px;
         padding: 3em;
+        padding-bottom: 0;
         width: 100%;
         max-width: var(--readable-max-width);
         margin: auto;
