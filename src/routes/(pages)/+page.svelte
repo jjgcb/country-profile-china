@@ -16,6 +16,8 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 // import Select from "$carbon/Select.svelte";
 
 import StandFirst from '$carbon/StandfirstCredits.svelte';
+import CopyIntro from "$copy/1-Intro.md";
+import CopyPolitics from "$copy/2-Politics.md";
 
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
@@ -96,8 +98,8 @@ let readMore2 = '">Read more</a>';
         credits={article.contributors}
         publishDate={new Date(article.pubDate)}> 
     </StandFirst>
-    <!-- <article class="stack box"> -->
         <article class="stack" id="top">
+            <CopyIntro></CopyIntro>
 
         <div class="profile-selector-container" id={selected}>
             <div class="profile-heading">
@@ -126,9 +128,8 @@ let readMore2 = '">Read more</a>';
             </div>
         </div>
 
-        
-    
-        <LoremIpsum/>
+        <CopyPolitics>
+        </CopyPolitics>
 
 
         <ChartFrame title="Pakistan GDP vs other top emitting countries" subtitle="">
@@ -173,6 +174,7 @@ let readMore2 = '">Read more</a>';
         width: 100%;
         max-width: var(--readable-max-width);
         margin: auto;
+        margin-top: var(--s2);
         display: flex;
         flex-wrap: wrap;
         align-content: flex-end;

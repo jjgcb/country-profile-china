@@ -1,29 +1,33 @@
 <script>
 	export let headline = 'Headline goes here';
-	export let credits = [];
-	export let publishDate = new Date();
-	export let updatedDate = new Date();
 	export let image;
 	export let backgroundPositionX = "center"; //center/left/right
-	export let backgroundPositionY = "top"; // bottom/center/top
 	export let backgroundSize = "cover";
 	export let photoCredit;
-
-	let authors = credits.filter(c=>c.role=="author");
-	let designers = credits.filter(c=>c.role=="design");
 
 	let chapter = [
 		{ link: '1', name: 'Politics' },
 		{ link: '2', name: 'Paris pledge' },
-		{ link: '3', name: 'Coal' },
-		{ link: '4', name: 'Low-carbon energy' },
-		{ link: '5', name: 'Energy efficiency' },
-		{ link: '6', name: 'Transport' },
-		{ link: '7', name: 'Oil and gas' },
-		{ link: '8', name: 'Agriculture and forests' },
-		{ link: '9', name: 'Impacts and adaptation' },
-		{ link: '10', name: 'Climate finance' }
+		{ link: '3', name: 'Oil, gas, coal' },
+		{ link: '4', name: 'Nuclear' },
+		{ link: '5', name: 'Renewables and hydropower' },
+		{ link: '6', name: 'Deforestation, wood burning and agriculture' },
+		{ link: '7', name: "'Nature-based solutions'" },
+		{ link: '8', name: 'Climate finance' },
+		{ link: '9', name: 'Impacts and adaptation' }
 	];
+
+	function handleAnchorClick (event) {
+		event.preventDefault()
+		const link = event.currentTarget
+		const anchorId = new URL(link.href).hash.replace('#', '')
+		const anchor = document.getElementById(anchorId)
+		console.log(anchorId)
+		window.scrollTo({
+			top: anchorId.offsetTop,
+			behavior: 'smooth'
+		})
+	}
 
 </script>
 
@@ -36,7 +40,7 @@
 <nav class="horizontal-nav">
 	<ul class="chapters">
 		{#each chapter as { link, name }, i}
-			<li><a target="_blank" href="#{link}" rel="noreferrer">
+			<li><a href="#{link}" rel="noreferrer" on:click={handleAnchorClick}>
 				{i + 1}: {name}
 			</a></li>
 		{/each}
@@ -111,7 +115,8 @@
 
 	.horizontal-nav{
 	height: 35px;
-    background-color: yellow;
+    background-color: #f4f4f4;
+	border-bottom: 0.6px solid #333333;
     width: 100%;
     display: flex;
     position: sticky;
