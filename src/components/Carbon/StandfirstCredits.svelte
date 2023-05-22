@@ -57,7 +57,13 @@
   } */
 
 .credit{
-    margin-bottom: 3em;
+    box-sizing: content-box;
+	width: 100%;
+	max-width: var(--readable-max-width);
+	margin: auto;
+    margin-top: 1em;
+	margin-bottom: 0.4em;
+
 }
 
 .credit p{

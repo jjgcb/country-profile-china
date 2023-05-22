@@ -30,41 +30,9 @@
 <div class="fullbleed" style={`background-image:url("${image}"); background-position-y:top; background-position-x:${backgroundPositionX}; background-size:${backgroundSize}`}>
 	<div class="center splash box">
 		<h1 class="ragged">{headline}</h1>
-		<div class="credit">
-			<p>
-			{#if authors.length > 0}
-				By
-			{#each authors as credit, i}
-				<a class="author" href="{credit.url}">{credit.name}</a>{#if i != authors.length -1}&nbsp;and&nbsp;{:else if i == authors.length -1}.{:else}, &nbsp;{/if}
-			{/each}
-			{/if}
-			</p>
-			<p>
-			{#if designers.length > 0}
-				Design by
-			{#each designers as credit, i}
-				<a class="author" href="{credit.url}">{credit.name}</a>{#if i != designers.length -1}&nbsp;and&nbsp;{:else if i == designers.length -1}.{:else}, &nbsp;{/if}
-			{/each}
-			{/if}
-			</p>
-			<p>
-				<time datetime={publishDate}>{publishDate.toLocaleDateString('en-GB', {
-						year: 'numeric',
-						month: 'long',
-						day: 'numeric'
-					})}</time>
-					<span class="last-updated">Last updated:</span>
-					<time datetime={updatedDate}>{updatedDate.toLocaleDateString('en-GB', {
-					year: 'numeric',
-					month: 'long',
-					day: 'numeric'
-				})}</time>
-			</p>
-		</div>
 	</div>
 	<span class="photo-credit">{ photoCredit }</span>
 </div>
-
 <nav class="horizontal-nav">
 	<ul class="chapters">
 		{#each chapter as { link, name }, i}
@@ -74,6 +42,8 @@
 		{/each}
 	</ul>
 </nav>
+
+
 
 <style>
 	.fullbleed {
@@ -97,37 +67,21 @@
 	.splash {
 		height: 80vh;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.splash h1{
-		display: block;
-		padding-left:var(--s1);
+		font-size: var(--s3);
 		width: 50%;
+		text-align: center;
 		color: var(--color-light-text);
 		text-shadow: 2px 2px 8px #333333;
-	}
-	.splash .credit p{
-		padding-left:var(--s1);
-		width: 50%;
-		color: var(--color-light-text);
-		text-shadow: 2px 2px 8px #333333;
-		line-height: var(--s1);
-		font-size: var(--s0);
-	}
-
-	.credit a {
-		color: var(--color-light-text);
-	}
-
-	.author{
-		color: var(--color-light-text);
-		text-decoration: underline;
 	}
 
 	.photo-credit{
-		position:relative;
+		position:absolute;
 		bottom: 5px;
 		right: 0px;
 		text-align: end;
@@ -135,10 +89,6 @@
 		padding-right:var(--s-1);
 		float: right;
 		font-weight: bold;
-	}
-
-	.last-updated{
-		margin-left: 2em;
 	}
 
 	@media (max-width:810px){
@@ -155,9 +105,6 @@
 			width: 100%;
 			line-height: 1.5em;
 		}
-		.splash .credit p{
-			width: 90%;
-		}
 	}
 
 	/* NAV */
@@ -168,10 +115,15 @@
     width: 100%;
     display: flex;
     position: sticky;
-    top: 55px;
+    top: 54px;
     z-index: 1000;
 	overflow-x: scroll;
+	overflow-y: hidden;
 	margin-block-start: 0;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 	}
 	ul.chapters{
 		display: inline-flex;

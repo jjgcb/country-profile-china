@@ -82,7 +82,6 @@ let profileLink = "https://www.carbonbrief.org/the-carbon-brief-profile-";
 let readMore = '<a href="'+profileLink;
 let readMore2 = '">Read more</a>';
 </script>
-<article class="stack" id="top">
     <SplashHeadline 
         headline={article.title} 
         credits={article.contributors}
@@ -90,7 +89,7 @@ let readMore2 = '">Read more</a>';
         updatedDate={new Date(article.updatedDate)}
 		image={"images/export-01.jpg"}
 		backgroundPositionY={"bottom"}
-		photoCredit="Richard Wilson Llyn-y-Cau, Cader Idris (1774), Photo &#169; Tate CC-BY-NC-ND 3.0 (Unported)"
+		photoCredit="Graphic: Carbon Brief. Credit: Alamy Stock Photo."
         photoCreditLink="https://www.tate.org.uk/art/artworks/wilson-llyn-y-cau-cader-idris-n05596">
     </SplashHeadline>
     <StandFirst
@@ -98,6 +97,7 @@ let readMore2 = '">Read more</a>';
         publishDate={new Date(article.pubDate)}> 
     </StandFirst>
     <!-- <article class="stack box"> -->
+        <article class="stack" id="top">
 
         <div class="profile-selector-container" id={selected}>
             <div class="profile-heading">

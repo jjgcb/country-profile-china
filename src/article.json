@@ -1,32 +1,32 @@
 {
 	"contributors": [
 		{
-			"name": "Ayesha Tandon", 
+			"name": "Daisy Dunne", 
 			"role": "author",
 			"email": "ayesha.tandon@carbonbrief.com",
-			"url": "https://www.carbonbrief.org/author/ayeshatandon/"
+			"url": "https://www.carbonbrief.org/author/daisydunne/"
 		},
 		{
-			"name": "Roz Pidcock",
+			"name": "Aruna Chandrasekhar",
 			"role": "author",
-			"url": "https://www.carbonbrief.org/author/rozpidcock/"
-		},
-		{
-			"name": "Tom Pearson",
-			"role": "design",
-			"url": "https://www.carbonbrief.org/author/tompearson/"
+			"url": "https://www.carbonbrief.org/author/arunachandrasekhar/"
 		},
 		{
 			"name": "Tom Prater",
 			"role": "design",
 			"url": "https://www.carbonbrief.org/author/tomprater/"
+		},
+		{
+			"name": "Joe Goodman",
+			"role": "design",
+			"url": "https://www.carbonbrief.org/author/joegoodman/"
 		}
 	],
 	"title": "The Carbon Brief profile: Pakistan",
 	"description": "Template for making pages",
 	"url": "https://interactive.carbonbrief.org",
-	"pubDate": "2022-12-08",
-	"updatedDate": "2022-12-10",
+	"pubDate": "2023-05-22",
+	"updatedDate": "",
 	"og":{
 		"description": "",
 		"locale": "en_GB",
