@@ -15,6 +15,8 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 	import ContinuousColorKey from "../../components/Carbon/ContinuousColorKey.svelte";
 // import Select from "$carbon/Select.svelte";
 
+import StandFirst from '$carbon/StandfirstCredits.svelte';
+
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
 import * as topojson from 'topojson-client';
@@ -80,18 +82,22 @@ let profileLink = "https://www.carbonbrief.org/the-carbon-brief-profile-";
 let readMore = '<a href="'+profileLink;
 let readMore2 = '">Read more</a>';
 </script>
-<div class="stack" id="top">
+<article class="stack" id="top">
     <SplashHeadline 
         headline={article.title} 
         credits={article.contributors}
         publishDate={new Date(article.pubDate)}
         updatedDate={new Date(article.updatedDate)}
-		image={"images/llyn-y-cau.webp"}
+		image={"images/export-01.jpg"}
 		backgroundPositionY={"bottom"}
 		photoCredit="Richard Wilson Llyn-y-Cau, Cader Idris (1774), Photo &#169; Tate CC-BY-NC-ND 3.0 (Unported)"
         photoCreditLink="https://www.tate.org.uk/art/artworks/wilson-llyn-y-cau-cader-idris-n05596">
     </SplashHeadline>
-    <article class="stack box">
+    <StandFirst
+        credits={article.contributors}
+        publishDate={new Date(article.pubDate)}> 
+    </StandFirst>
+    <!-- <article class="stack box"> -->
 
         <div class="profile-selector-container" id={selected}>
             <div class="profile-heading">
@@ -151,8 +157,8 @@ let readMore2 = '">Read more</a>';
         <img class="inline" src="images/flooding-death-toll.png"/>
         
        
-    </article>
-</div>
+    <!-- </article> -->
+</article>
 <style>
 .country-intro{
         /* border: solid red 2px; */

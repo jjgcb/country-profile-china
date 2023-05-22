@@ -272,3 +272,19 @@ p.caption{
 	line-height: var(--s1);
 	margin-top: var(--s-5);
 }
+
+p.stand-first {
+	font-size: var(--s1);
+	line-height: 2.6rem;
+	font-style: italic;
+	margin-top: 3em;
+	margin-bottom: 0.4em;
+	text-align: center;
+	color: #333333;
+}
+
+@media (max-width:500px){
+	p.stand-first {
+		font-size: 1.5rem;
+	}
+}
