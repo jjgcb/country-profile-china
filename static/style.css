@@ -293,3 +293,34 @@ p.stand-first {
 		font-size: 1.5rem;
 	}
 }
+
+.two-col{
+	width:100%;
+	max-width: var(--readable-max-width);
+	margin:auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.two-col .source{
+	margin-top:var(--s1);
+}
+
+@media (max-width: 650px) {
+	.two-col{
+		grid-template-columns: 1fr;
+		max-width: 550px;
+	}
+}
+
+img.inline{
+	margin: 0 auto;
+	max-width: 780px;
+	width: 100%;
+}
+
+img.wide{
+margin: 2.5em auto;
+max-width: var(--page-max-width);
+width: 100%;
+}

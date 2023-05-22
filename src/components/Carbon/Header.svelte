@@ -20,7 +20,8 @@
 		height:var(--s3);
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		background-color: #0C2635;
+		/* background-color: #0C2635; */
+		background: #01411c;
 		color: var(--color-light-text);
 		padding: 0.8em 1.6em;
 		position: fixed;

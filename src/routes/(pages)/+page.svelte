@@ -15,6 +15,8 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 	import ContinuousColorKey from "../../components/Carbon/ContinuousColorKey.svelte";
 // import Select from "$carbon/Select.svelte";
 
+import CountryProfileSelector from "$carbon/CountryProfileSelector.svelte"
+
 import StandFirst from '$carbon/StandfirstCredits.svelte';
 import CopyIntro from "$copy/01-Intro.md";
 import CopyChapter1 from "$copy/1-Politics.md";
@@ -107,8 +109,11 @@ let readMore2 = '">Read more</a>';
         publishDate={new Date(article.pubDate)}> 
     </StandFirst>
         <article class="stack" id="top">
-            <CopyIntro></CopyIntro>
+        <CopyIntro></CopyIntro>
 
+        <img class="wide" src="images/pakistan-infographic.webp"/>
+
+        <CopyChapter1></CopyChapter1>
         <div class="profile-selector-container" id={selected}>
             <div class="profile-heading">
                 <p>Carbon Brief Country Profiles</p>
@@ -131,12 +136,10 @@ let readMore2 = '">Read more</a>';
                     {:else}
                     <p>{@html selected ? selected.text+' '+readMore+selected.val+readMore2 : ""}</p>
                     {/if}
-
+        
                 <!-- <p>{@html selected ? emptyPlaceholder : emptyPlaceholder }</p> -->
             </div>
         </div>
-
-        <CopyChapter1></CopyChapter1>
         <CopyChapter2></CopyChapter2>
         <CopyChapter3></CopyChapter3>
         <CopyChapter4></CopyChapter4>
@@ -147,14 +150,14 @@ let readMore2 = '">Read more</a>';
         <CopyChapter9></CopyChapter9>
 
 
-        <ChartFrame title="Pakistan GDP vs other top emitting countries" subtitle="">
+        <!-- <ChartFrame title="Pakistan GDP vs other top emitting countries" subtitle="">
             <LineChart 
             data={data.gdpPakistan}
             dateFormat={timeFormat('%Y')}
             dateExtent={[new Date(1960,0,0), new Date(2022,0,0)]}
             lineProperties={['Australia','Brazil','Canada','France','India','Indonesia','Iran','Japan','Mexico','Nigeria','Russia','Pakistan','South Africa','South Korea','Turkey','United States']}
             timeAccessor={row=>new Date(row.Year)}></LineChart>
-        </ChartFrame>
+        </ChartFrame> -->
 
         <ChartFrame title="Pakistan inflation % vs other top emitting countries" subtitle="">
             <LineChart 
@@ -164,14 +167,6 @@ let readMore2 = '">Read more</a>';
             lineProperties={['Australia','Brazil','Canada','France','India','Indonesia','Iran','Japan','Mexico','Nigeria','Russia','Pakistan','South Africa','South Korea','Turkey','United States']}
             timeAccessor={row=>new Date(row.Year)}></LineChart>
         </ChartFrame>
-
-
-        <img class="wide" src="images/pakistan-triptych.png"/>
-
-        <LoremIpsum/>
-
-        <img class="inline" src="images/flooding-death-toll.png"/>
-        
        
     <!-- </article> -->
 </article>
@@ -233,17 +228,7 @@ let readMore2 = '">Read more</a>';
         box-sizing: content-box;
         margin-inline: auto;
     }
-    img.inline{
-            margin: 0 auto;
-            max-width: 780px;
-            width: 100%;
-        }
-
-    img.wide{
-        margin: 0 auto;
-        max-width: var(--page-max-width);
-        width: 100%;
-    }
+    
     figcaption{
         color: var(--color-light-text);
         width: var(--readable-max-width);

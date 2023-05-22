@@ -8,9 +8,11 @@ One of the greatest climate impacts facing Pakistan is flooding linked to extrem
 
 The country has faced deadly floods every year for the past 13 years, with 2010 and 2022 among the worst for number of people killed and area of land affected.
 
+<img class="inline" src="images/flooding-death-toll.png"/>
+
 (The year 1950 was also particularly deadly for flooding in Pakistan, despite less land being affected than in 2010 and 2022. At this time, far fewer flood defences were in place than today, meaning a smaller flood could have a larger human impact.)
 
-[TOM’S FLOODS GRAPHIC]
+<img class="wide" src="images/pakistan-triptych.png"/>
 
 From June to August 2022, Pakistan received nearly 190% more rain than its 30-year average. This drove catastrophic flooding affecting 33 million people and killing more than 1,700.
 
