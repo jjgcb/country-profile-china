@@ -16,8 +16,16 @@ import LoremIpsum from "$copy/LoremIpsum.md";
 // import Select from "$carbon/Select.svelte";
 
 import StandFirst from '$carbon/StandfirstCredits.svelte';
-import CopyIntro from "$copy/1-Intro.md";
-import CopyPolitics from "$copy/2-Politics.md";
+import CopyIntro from "$copy/01-Intro.md";
+import CopyChapter1 from "$copy/1-Politics.md";
+import CopyChapter2 from "$copy/2-Paris.md";
+import CopyChapter3 from "$copy/3-OilGasCoal.md";
+import CopyChapter4 from "$copy/4-Nuclear.md";
+import CopyChapter5 from "$copy/5-Renewables.md";
+import CopyChapter6 from "$copy/6-Deforestation.md";
+import CopyChapter7 from "$copy/7-ClimateFinance.md";
+import CopyChapter8 from "$copy/8-NatureBased.md";
+import CopyChapter9 from "$copy/9-Impacts.md";
 
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
@@ -128,8 +136,15 @@ let readMore2 = '">Read more</a>';
             </div>
         </div>
 
-        <CopyPolitics>
-        </CopyPolitics>
+        <CopyChapter1></CopyChapter1>
+        <CopyChapter2></CopyChapter2>
+        <CopyChapter3></CopyChapter3>
+        <CopyChapter4></CopyChapter4>
+        <CopyChapter5></CopyChapter5>
+        <CopyChapter6></CopyChapter6>
+        <CopyChapter7></CopyChapter7>
+        <CopyChapter8></CopyChapter8>
+        <CopyChapter9></CopyChapter9>
 
 
         <ChartFrame title="Pakistan GDP vs other top emitting countries" subtitle="">
