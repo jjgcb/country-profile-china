@@ -8,9 +8,9 @@
 	let chapter = [
 		{ link: '1', name: 'Politics' },
 		{ link: '2', name: 'Paris pledge' },
-		{ link: '3', name: 'Oil, gas, coal' },
+		{ link: '3', name: 'Oil, gas & coal' },
 		{ link: '4', name: 'Nuclear' },
-		{ link: '5', name: 'Renewables and hydropower' },
+		{ link: '5', name: 'Renewables including hydropower' },
 		{ link: '6', name: 'Deforestation, wood burning and agriculture' },
 		{ link: '7', name: "'Nature-based solutions'" },
 		{ link: '8', name: 'Climate finance' },
@@ -39,11 +39,15 @@
 </div>
 <nav class="horizontal-nav">
 	<ul class="chapters">
+		<div class="sections">Sections: </div>
+		
 		{#each chapter as { link, name }, i}
 			<li><a href="#{link}" rel="noreferrer" on:click={handleAnchorClick}>
-				{i + 1}: {name}
+				<!-- {i + 1}:  -->
+				{name}
 			</a></li>
 		{/each}
+		<div class="right-chev">&rsaquo;</div>
 	</ul>
 </nav>
 
@@ -114,36 +118,69 @@
 	/* NAV */
 
 	.horizontal-nav{
-	height: 35px;
-    background-color: #f4f4f4;
-	border-bottom: 0.6px solid #333333;
-    width: 100%;
-    display: flex;
-    position: sticky;
-    top: 54px;
-    z-index: 1000;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	margin-block-start: 0;
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
+		height: 35px;
+		background-color: #f4f4f4;
+		border-bottom: 0.6px solid #333333;
+		width: 100%;
+		display: flex;
+		position: sticky;
+		top: 54px;
+		z-index: 1000;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		margin-block-start: 0;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+		-ms-overflow-style: none;  /* IE and Edge */
+  		scrollbar-width: none;  /* Firefox */
+	}
+	.horizontal-nav::-webkit-scrollbar {
+  		display: none;
 	}
 	ul.chapters{
 		display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-	margin-top: 0;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		padding-top: 0;
+		margin: 0;
+	}
+	.sections{
+		position: sticky;
+		background: #4a6154;
+		height: calc(100vh - 40px);
+		left: 0px;
+		margin-left: -5em;
+		margin-right: 3em;
+		padding-right: 2.5em;
+		padding-top: 0.4em;
+		padding-left: 1.8em;
+		color: white;
+		list-style-type: none;
+		font-size: 1.3em;
+		text-align: center;
+		border-right: solid 1px #333333;
+	}
+
+	.right-chev{
+		position: sticky;
+		right: 0px;
+		padding: 0.1em 0.3em 0.1em 1.2em;
+		color: white;
+		font-size: large;
+		font-weight: bold;
+		background: rgb(74,97,84);
+		background: linear-gradient(90deg, rgba(74,97,84,0) 0%, rgba(74,97,84,0.3477984943977591) 50%, rgba(74,97,84,1) 100%);
 	}
 	.chapters li{
 		list-style-type: none;
 		font-size: 1.2em;
-		/* min-width: 100px; */
-		margin: 0 1.3em;
+		padding: 0 1.3em;
 		text-align: center;
 		min-width: fit-content;
 		width: auto;
+		border-right: 0.7px solid #333333;
 	}
 	.chapters li:last-child{
 		padding-right: 5em;
