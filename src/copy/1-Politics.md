@@ -48,8 +48,8 @@ In January 2023, the country faced a complete power breakdown due to a technical
 In February, energy minister Khurram Dastgir Khan said lack of access to LNG was forcing the country to return to coal and promised to “quadruple” domestically-fuelled coal power capacity in response to the crisis, according to Reuters. (See coal, oil and gas for more information.)
 
 <div class="two-col box">
-            <img src="images/gdp-pakistan-01.png">
-            <img src="images/gdp-pakistan-02.png">
+            <img src="images/gdp-01.png">
+            <img src="images/gdp-02.png">
             <div class="source">Source: <a href="https://data.worldbank.org/">World Bank</a></div>
         </div>
 

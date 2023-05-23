@@ -262,7 +262,7 @@ blockquote {
 blockquote p{
 	padding-left: var(--s1);
 	padding-right: var(--s2);
-	border-left: var(--border-thick) solid #0C2635;	
+	border-left: var(--border-thick) solid #4d8e4d;	
 	width: auto;
 }
 
@@ -320,9 +320,15 @@ img.inline{
 	width: 100%;
 }
 
-img.inline.flooding{
+img.inline.tight{
 	max-width: 700px;
 	margin: 2em auto;
+	margin-bottom: 0;
+}
+
+.tight{
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 img.wide{

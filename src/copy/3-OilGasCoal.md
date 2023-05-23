@@ -62,7 +62,10 @@ Through these twists and turns, Pakistan has been shifting its electricity suppl
 
 (Nuclear and, more recently, wind and solar, have also been expanding, see below.)
 
-[electricity chart]
+<div class="box">
+<img class="inline tight" src="images/electricity-production-pakistan-01.png" alt=""/>
+<div class="source tight">Source: <a href="https://www.iea.org/data-and-statistics">IEA</a></div>
+</div>
 
 However, Pakistan’s increasing reliance on imported gas to generate electricity has been called into question during the global energy crisis, when prices surged to record highs.
 
