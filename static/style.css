@@ -320,6 +320,11 @@ img.inline{
 	width: 100%;
 }
 
+img.inline.flooding{
+	max-width: 700px;
+	margin: 2em auto;
+}
+
 img.wide{
 margin: 2.5em auto;
 max-width: var(--page-max-width);
