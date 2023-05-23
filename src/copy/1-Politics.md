@@ -14,11 +14,20 @@ Pakistan is currently facing a severe economic crisis. An editorial focused on t
 
 The Indian newspaper Mint reported that the country’s external debt rose by a sharp 38% to $73bn by the end of January, when compared to the year before. Al Jazeera reported that inflation in the country surged to 31.5% in February, the highest level since 1974.
 
-As of 2018, 40% of Pakistan’s population lived in poverty. The current figure is likely to be higher following the onset of the Covid pandemic and a cost-of-living crisis fuelled by sky-high energy prices and inflation.
+<div>
 
-Energy is right at the heart of Pakistan’s ongoing economic crisis.
+<div class="inset">
+    <img src="images/inflation-pakistan.png">
+    <figcaption>Source: <a href="https://www.imf.org/en/Data" target="_blank">IMF</a></figcaption>
+</div>
+
+<p>As of 2018, 40% of Pakistan’s population lived in poverty. The current figure is likely to be higher following the onset of the Covid pandemic and a cost-of-living crisis fuelled by sky-high energy prices and inflation.</p><br>
+
+<p>Energy is right at the heart of Pakistan’s ongoing economic crisis.</p><br>
 
 Pakistan’s power sector is plagued by a large circular debt, a type of public debt that has built up due to the cascading impact of unpaid government subsidies on power distributors and producers, as well as deep structural issues in the sector.
+
+</div>
 
 The country is heavily reliant on importing fossil fuels, which currently make up 40% of Pakistan’s primary energy supply.
 

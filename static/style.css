@@ -26,6 +26,7 @@
 
 	/* measurements */
 	--page-max-width: 1270px;
+	--graphic-max-width: 1080px;
 	--readable-max-width: 780px;
 
 	--border-thin: 1px;
@@ -303,7 +304,7 @@ p.stand-first {
 }
 
 .two-col .source{
-	margin-top:var(--s1);
+	margin-top:var(--s-5);
 }
 
 @media (max-width: 650px) {
@@ -323,4 +324,27 @@ img.wide{
 margin: 2.5em auto;
 max-width: var(--page-max-width);
 width: 100%;
+}
+
+.inset{
+	max-width:500px; 
+	float:right; 
+	margin-right:8em; 
+	padding-left:2em; 
+	padding-bottom:2em
+}
+
+.inset > figcaption{
+	padding-left:0.5em;
+	font-size:1.2em;
+}
+
+@media (max-width:929px){
+	.inset{
+		max-width: 780px;
+		float: none;
+		padding-left: 0;
+		padding-bottom: 2em;
+		margin: auto;
+	}
 }
