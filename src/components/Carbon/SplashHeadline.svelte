@@ -188,4 +188,13 @@
 	.chapters li a{
 		text-decoration: none;
 	}
+
+	.chapters li a.highlight{
+		background-color: red;
+	}
+
+	:global(h2){
+		scroll-margin-top: 100px;
+	}
+
 </style>
