@@ -4,30 +4,24 @@
 	export let backgroundPositionX = "center"; //center/left/right
 	export let backgroundSize = "cover";
 	export let photoCredit;
+	export let currentSection = "";
 
 	let chapter = [
-		{ link: '1', name: 'Politics' },
-		{ link: '2', name: 'Paris pledge' },
-		{ link: '3', name: 'Oil, gas & coal' },
-		{ link: '4', name: 'Nuclear' },
-		{ link: '5', name: 'Renewables including hydropower' },
-		{ link: '6', name: 'Deforestation, wood burning and agriculture' },
-		{ link: '7', name: "'Nature-based solutions'" },
-		{ link: '8', name: 'Climate finance' },
-		{ link: '9', name: 'Impacts and adaptation' }
+		{ link: 'politics', name: 'Politics', selected:false },
+		{ link: 'paris-pledge', name: 'Paris pledge', selected:false },
+		{ link: 'oil-gas-and-coal', name: 'Oil, gas & coal', selected:false },
+		{ link: 'nuclear', name: 'Nuclear', selected:false },
+		{ link: 'renewables-including-hydropower', name: 'Renewables including hydropower', selected:false },
+		{ link: 'deforestation-wood-burning-and-agriculture', name: 'Deforestation, wood burning and agriculture', selected:false },
+		{ link: 'nature-based-solutions', name: "'Nature-based solutions'", selected:false },
+		{ link: 'climate-finance', name: 'Climate finance', selected:false },
+		{ link: 'impacts-and-adaptation', name: 'Impacts and adaptation', selected:false }
 	];
 
-	function handleAnchorClick (event) {
-		event.preventDefault()
-		const link = event.currentTarget
-		const anchorId = new URL(link.href).hash.replace('#', '')
-		const anchor = document.getElementById(anchorId)
-		console.log(anchorId)
-		window.scrollTo({
-			top: anchorId.offsetTop,
-			behavior: 'smooth'
-		})
-	}
+$: chapter = chapter.map(ch=>{
+		ch.selected = (ch.link == currentSection);
+		return ch;
+	});
 
 </script>
 
@@ -41,8 +35,8 @@
 	<ul class="chapters">
 		<div class="sections">Sections: </div>
 		
-		{#each chapter as { link, name }, i}
-			<li><a href="#{link}" rel="noreferrer" on:click={handleAnchorClick}>
+		{#each chapter as { link, name, selected }, i}
+			<li><a href="#{link}" class={selected?"highlight":""} rel="noreferrer">
 				<!-- {i + 1}:  -->
 				{name}
 			</a></li>
