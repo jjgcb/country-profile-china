@@ -8,7 +8,8 @@ Exploration for oil in Pakistan began in the [late 19th century](https://www.lye
 
 The country’s first gas field was discovered in Balochistan in 1952, near the Sui gas field, which remains the country’s biggest gas discovery to date.
 
-[SUI GAS FIELD IMAGE]
+<img class="inline" src="images/inline/sui-gas-pakistan-2G8NR6R.webp"/>
+<p class="caption">A Pakistani stamp showing the Sui gas plant, circa 1955. Credit: Borislav Marinic / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Along with oil and gas, coal was also [discovered](https://www.dawn.com/news/371000/pakistan-s-coal-resources) in Balochistan in the late 19th century and mined to serve colonial railways under the British regime. 
 
@@ -26,7 +27,8 @@ Child labour, [bonded labour](https://www.ilo.org/wcmsp5/groups/public/---ed_nor
 
 The coal rush in Thar, whose 175bn tonne coal reserves “[exceed[s] the oil reserves of both Saudi Arabia and Iran](https://www.theigc.org/blogs/how-power-capitalism-and-politics-are-perpetuating-coal-use-pakistan)”, is also taking a toll on Indigenous communities and desert ecosystems, [Dawn](https://www.dawn.com/news/1743740) reported earlier this year. 
 
-[THARI NOMADS IMAGE]
+<img class="inline" src="images/inline/thari-nomads-pakistan-D38FYJ.webp"/>
+<p class="caption">Thari nomads on camelback. Thar Desert, Pakistan. Credit: Neil Cooper / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Civil society groups have pointed to land acquisition without consent for Thar’s expanding coal mines and torture of mine workers, [Dawn](https://www.dawn.com/news/1646493) reported, while environmental groups have warned of mining’s [groundwater impacts](https://www.dawn.com/news/1573293) in the desert region.
 
