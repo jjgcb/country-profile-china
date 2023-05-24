@@ -11,7 +11,7 @@ China has financed several large hydropower projects in Pakistan as part of its 
 This includes the operational [Karot](https://cpec.gov.pk/project-details/16) project (720MW) and two plants that are still under construction, [Suki Kinari](https://cpec.gov.pk/project-details/15) (870MW) and [Kohala](https://cpec.gov.pk/project-details/23) (1,124MW).
 
 
-<img class="inline" src="images/inline/hydropower-plant-pakistan-2JF77KW.webp"/>
+<img class="wide" src="images/inline/hydropower-plant-pakistan-2JF77KW.webp"/>
 <p class="caption">Karot Hydropower Plant in Pakistan's eastern Punjab province. Credit: Xinhua / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 In January 2023, France announced it will loan Pakistan $130m to build the Keyal Khuwar hydropower project (128MW), according to Pakistan’s [News International](https://www.thenews.com.pk/print/1031494-pakistan-to-get-120m-french-soft-loan-for-hydropower-project).

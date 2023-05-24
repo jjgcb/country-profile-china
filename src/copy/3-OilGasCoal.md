@@ -8,16 +8,22 @@ Exploration for oil in Pakistan began in the [late 19th century](https://www.lye
 
 The country’s first gas field was discovered in Balochistan in 1952, near the Sui gas field, which remains the country’s biggest gas discovery to date.
 
-<img class="inline" src="images/inline/sui-gas-pakistan-2G8NR6R.webp"/>
-<p class="caption">A Pakistani stamp showing the Sui gas plant, circa 1955. Credit: Borislav Marinic / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+<div>
 
-Along with oil and gas, coal was also [discovered](https://www.dawn.com/news/371000/pakistan-s-coal-resources) in Balochistan in the late 19th century and mined to serve colonial railways under the British regime. 
+<div class="inset">
+    <img src="images/inline/sui-gas-pakistan-2G8NR6R.webp">
+    <figcaption>A Pakistani stamp showing the Sui gas plant, circa 1955. Credit: Borislav Marinic / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</figcaption>
+</div>
 
-Today, domestic oil production accounts for just 16% of demand. Likewise, while domestic gas production has grown 10-fold since 1970 it has nevertheless failed to keep up with demand.
+<p>Along with oil and gas, coal was also <a href="https://www.dawn.com/news/371000/pakistan-s-coal-resources">discovered</a> in Balochistan in the late 19th century and mined to serve colonial railways under the British regime.</p><br>
 
-As a result, gas imports have been growing rapidly and have doubled since the first liquified natural gas (LNG) terminal was built in 2015. 
+<p>Today, domestic oil production accounts for just 16% of demand. Likewise, while domestic gas production has grown 10-fold since 1970 it has nevertheless failed to keep up with demand.</p><br>
 
-The country’s dependency on imported fossil fuels is a [well recognised problem](https://www.adb.org/sites/default/files/publication/535821/adbi-wp1024.pdf) that has [constrained growth](https://www.bqprime.com/gadfly/pakistan-s-political-crisis-is-an-energy-crisis-too-wind-solar-would-help) and kept energy and electricity prices steep.
+<p>As a result, gas imports have been growing rapidly and have doubled since the first liquified natural gas (LNG) terminal was built in 2015.</p><br>
+
+<p>The country’s dependency on imported fossil fuels is a <a href="https://www.adb.org/sites/default/files/publication/535821/adbi-wp1024.pdf">well recognised problem</a> that has <a href="https://www.bqprime.com/gadfly/pakistan-s-political-crisis-is-an-energy-crisis-too-wind-solar-would-help">constrained growth</a> and kept energy and electricity prices steep.</p>
+
+</div>
 
 Pakistan’s coal deposits are concentrated in the provinces of Sindh, Punjab and Balochistan, with total reserves [estimated](https://www.gem.wiki/Pakistan_and_coal) at 185bn tonnes. Sindh is host to two major coalfields: the Lakhra coalfield and the Thar coalfield in the Thar desert bordering India, the latter containing one of the [world’s largest lignite deposits](https://iopscience.iop.org/article/10.1088/1742-6596/989/1/012004/pdf). Lignite is the most polluting form of coal. 
 

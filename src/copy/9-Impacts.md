@@ -20,8 +20,8 @@ Other factors that made the floods so deadly were the proximity of human settlem
 
 <img class="wide" src="images/pakistan-triptych.png"/>
 
-<img class="inline" src="images/inline/flooding-pakistan-2022-2MAP6MG.webp"/>
-<p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+<!-- <img class="inline" src=""/>
+<p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p> -->
 
 In February 2023, the [Guardian](https://www.theguardian.com/global-development/2023/feb/08/pakistan-families-hungry-and-homeless-floods) reported that thousands of families remain homeless and without livelihoods months after the floods.
 
@@ -31,8 +31,15 @@ In January 2023, Pakistan and the UN held a [joint summit](https://www.undp.org/
 
 [Climate Home News](https://www.climatechangenews.com/2023/01/17/world-bank-adaptation-funds-slept-through-pakistans-record-flooding/) also reported that the World Bank was accused of “sleeping through” the floods by failing to spend pledged finance on new flood defences for Karachi ahead of the disaster. 
 
-<img class="inline" src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp"/>
-<p class="caption">A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+<!-- <img class="inline" src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp"/>
+<p class="caption">A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p> -->
+
+<div class="two-col box wide">
+            <img src="images/inline/flooding-pakistan-2022-2MAP6MG.webp">
+            <img src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp">
+            <p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+            <p class="caption">A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+        </div>
 
 Additionally, [Climate Home News](https://www.climatechangenews.com/2023/02/09/un-budget-cuts-hindered-response-to-pakistans-extreme-floods/) reported that cuts to the UN Office for the Coordination of Humanitarian Affairs (OCHA) Pakistan branch left them unable to respond adequately to the 2023 disaster. The publication reported:
 

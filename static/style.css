@@ -307,6 +307,11 @@ p.stand-first {
 	grid-template-columns: 1fr 1fr;
 }
 
+.two-col.wide{
+	max-width: var(--graphic-max-width);
+	column-gap: 2em;
+}
+
 .two-col .source{
 	margin-top:var(--s-5);
 }
@@ -316,10 +321,14 @@ p.stand-first {
 		grid-template-columns: 1fr;
 		max-width: 550px;
 	}
+	.two-col.wide{
+		row-gap:2em;
+	}
 }
 
 img.inline{
 	margin: 0 auto;
+	margin-top: var(--s1);
 	max-width: 780px;
 	width: 100%;
 }
@@ -337,6 +346,7 @@ img.inline.tight{
 
 img.wide{
 margin: 2.5em auto;
+margin-bottom: 0.3em;
 max-width: var(--page-max-width);
 width: 100%;
 }
