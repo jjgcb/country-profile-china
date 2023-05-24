@@ -13,8 +13,8 @@
 
 <div class="profile-selector-container" id={selected}>
     <div class="profile-heading">
-        <p>Carbon Brief Country Profiles</p>
-        <p>Select a country from the series</p>
+        <p class="profile-title">Carbon Brief Country Profiles</p>
+        <p class="profile-prompt">Select a country from the series</p>
         <select name="countryProfiles" on:change={selectionChange}>
         {#each options as option}
             <option value={option.value}>
@@ -26,7 +26,7 @@
     <slot name="illustration"></slot>
     <div class="country-intro">
     {#if selected && selected.text}             
-        <p>{@html `${selected.text} <a href="${selected.link}">Read more</a>`}</p>
+        <p>{@html `${selected.text}`}</p> <p>{@html `<a href="${selected.link}">Read more</a>`}</p>
     {:else}
     <slot name="placeholder">place holder text</slot>
     {/if}
@@ -35,13 +35,19 @@
 <style>
     .country-intro{
         /* border: solid red 2px; */
-        height: 108px;
+        height: auto;
+        padding-bottom: var(--s1);
         width: 100%;
     }
+    .country-intro p{
+        font-size:1.5em;
+    }
     .profile-selector-container{
-        border: solid 1px grey;
-        max-height: 300px;
+        border: solid 2px #0b4572;
+        background-color: floralwhite;
+        /* max-height: 300px; */
         padding: 3em;
+        padding-top: 0;
         padding-bottom: 0;
         width: 100%;
         max-width: var(--readable-max-width);
@@ -53,7 +59,15 @@
         align-items: flex-start;
     }
     .profile-heading{
-        margin-top:5em
+        margin-top:3em
+    }
+    p.profile-title{
+        font-size: 2.5em;
+        font-family: var(--sans-serif);    
+    }
+    p.profile-prompt{
+        font-size: 1.5em;
+        color: #666666;
     }
     select{
         width: 66%;
