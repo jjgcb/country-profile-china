@@ -133,6 +133,14 @@ $: chapter = chapter.map(ch=>{
 	.horizontal-nav::-webkit-scrollbar {
   		display: none;
 	}
+	@media (min-width:1660px){
+		.horizontal-nav{
+			justify-content: center;
+		}
+		.right-chev{
+			display: none;
+		}
+	}
 	ul.chapters{
 		display: inline-flex;
 		flex-direction: row;

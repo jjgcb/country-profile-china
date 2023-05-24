@@ -70,8 +70,6 @@ let locatorCountry = '';
         <article class="stack" id="top">
         <CopyIntro></CopyIntro>
 
-        <!-- <img class="wide" src="images/pakistan-infographic.webp"/> -->
-
         <Infographic></Infographic>
 
         <CopyChapter1></CopyChapter1>

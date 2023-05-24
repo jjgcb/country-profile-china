@@ -1,4 +1,4 @@
-<div id="g-pakistan-infographic-wide-box" class="ai2html">
+<div id="g-pakistan-infographic-wide-box" class="ai2html infographic">
 
 	<!-- Artboard: Artboard_1 -->
 	<div id="g-pakistan-infographic-wide-Artboard_1" class="g-artboard" style="width: 1200px;height: 571px" data-aspect-ratio="2.103" data-min-width="0">
@@ -178,6 +178,7 @@
 	#g-pakistan-infographic-wide-box ,
 	#g-pakistan-infographic-wide-box .g-artboard {
 		margin:0 auto;
+        margin-block-start: var(--s2);
 	}
 	#g-pakistan-infographic-wide-box p {
 		margin:0;
@@ -314,5 +315,9 @@
 	#g-pakistan-infographic-wide-Artboard_1 .g-cstyle2 {
 		color:rgb(244,244,244);
 	}
+
+    .infographic{
+        margin-block-start: var(--s2);
+    }
 
 </style>
