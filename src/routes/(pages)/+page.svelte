@@ -23,8 +23,8 @@ import CopyChapter3 from "$copy/3-OilGasCoal.md";
 import CopyChapter4 from "$copy/4-Nuclear.md";
 import CopyChapter5 from "$copy/5-Renewables.md";
 import CopyChapter6 from "$copy/6-Deforestation.md";
-import CopyChapter7 from "$copy/7-ClimateFinance.md";
-import CopyChapter8 from "$copy/8-NatureBased.md";
+import CopyChapter7 from "$copy/7-NatureBased.md";
+import CopyChapter8 from "$copy/8-ClimateFinance.md";
 import CopyChapter9 from "$copy/9-Impacts.md";
 
 import { onMount } from 'svelte';

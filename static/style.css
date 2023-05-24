@@ -272,7 +272,7 @@ blockquote p{
 
 p.caption{
 	font-family: var(--sans-serif);
-	font-size: var(--s0);
+	font-size: 1.2em;
 	color: var(--color-supplementary-text);
 	line-height: var(--s1);
 	margin-top: var(--s-5);
