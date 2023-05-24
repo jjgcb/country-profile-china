@@ -1,6 +1,7 @@
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from "mdsvex";
+import slug from "rehype-slug";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,7 +10,10 @@ const config = {
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [
-		mdsvex({ extensions: ['.md'] })
+		mdsvex({ 
+			extensions: ['.md'],
+			rehypePlugins: [slug]
+		})
 	]
 };
 

@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"rehype-slug": "^5.1.0",
 		"svelte-select": "^5.5.2",
 		"topojson-client": "^3.1.0"
 	}
