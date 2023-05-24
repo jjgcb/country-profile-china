@@ -26,7 +26,7 @@
     <slot name="illustration"></slot>
     <div class="country-intro">
     {#if selected && selected.text}             
-        <p>{@html `${selected.label}: ${selected.text} <a href="${selected.link}">Read more</a>`}</p>
+        <p>{@html `${selected.text} <a href="${selected.link}">Read more</a>`}</p>
     {:else}
     <slot name="placeholder">place holder text</slot>
     {/if}
