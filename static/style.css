@@ -345,6 +345,12 @@ img.inline.tight{
 	margin-bottom: 0;
 }
 
+img.inline.mobile{
+	max-width: 500px;
+	margin: 2em auto;
+	margin-bottom: 0;
+}
+
 .tight{
 	max-width: 700px;
 	margin: 0 auto;
