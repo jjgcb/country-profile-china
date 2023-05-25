@@ -8,6 +8,7 @@ import ProfileSelector from "$carbon/ProfileSelector.svelte"
 
 import StandFirst from '$carbon/StandfirstCredits.svelte';
 import CopyIntro from "$copy/01-Intro.md";
+import CopyIntro2 from "$copy/01-Intro-2.md";
 import CopyChapter1 from "$copy/1-Politics.md";
 import CopyChapter2 from "$copy/2-Paris.md";
 import CopyChapter3 from "$copy/3-OilGasCoal.md";
@@ -69,19 +70,18 @@ let locatorCountry = '';
     </StandFirst>
         <article class="stack" id="top">
         <CopyIntro></CopyIntro>
-
+        <ProfileSelector
+        options={data.countryProfiles}
+        on:select={ev => locatorCountry = ev.detail.value ? ev.detail.value : undefined }>
+        <div class="globe" slot="illustration">
+            <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
+        </div>
+        <p slot="placeholder">PPPPP</p>
+        </ProfileSelector>
+        <CopyIntro2></CopyIntro2>
         <Infographic></Infographic>
 
         <CopyChapter1></CopyChapter1>
-        <ProfileSelector
-            options={data.countryProfiles}
-            on:select={ev => locatorCountry = ev.detail.value ? ev.detail.value : undefined }>
-            <div class="globe" slot="illustration">
-                <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
-            </div>
-            <p slot="placeholder">PPPPP</p>
-        </ProfileSelector>
-        
         <CopyChapter2></CopyChapter2>
         <CopyChapter3></CopyChapter3>
         <CopyChapter4></CopyChapter4>

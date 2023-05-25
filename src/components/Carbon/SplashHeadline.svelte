@@ -76,7 +76,7 @@ $: chapter = chapter.map(ch=>{
 
 	.splash h1{
 		font-size: var(--s3);
-		width: 50%;
+		width: 60%;
 		text-align: center;
 		color: var(--color-light-text);
 		text-shadow: 2px 2px 8px #333333;
