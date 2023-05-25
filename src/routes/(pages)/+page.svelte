@@ -26,6 +26,7 @@ import GlobeLocator from "$components/GlobeLocator.svelte";
 
 // "data" is an object containing parsed data objects from static/data.
 export let data;
+let innerWidth = 700;
 
 console.log(`PRE LOADED DATA`, Object.keys(data))
 
@@ -54,6 +55,7 @@ onMount(()=>{
 });
 let locatorCountry = '';
 </script>
+<svelte:window bind:innerWidth />
     <SplashHeadline 
         headline={article.title} 
         credits={article.contributors}
@@ -79,7 +81,14 @@ let locatorCountry = '';
         <p slot="placeholder">PPPPP</p>
         </ProfileSelector>
         <CopyIntro2></CopyIntro2>
-        <Infographic></Infographic>
+        {#if innerWidth > 1200}
+            <img class="wide" src="images/pakistan-infographic-wide-01.png"/>
+        {:else if innerWidth > 600}
+            <img class="inline" src="images/pakistan-infographic-square-01.png">
+        {:else}
+            <img class="inline mobile" src="images/pakistan-infographic-mobile-01.png">
+        {/if}
+        <!-- <Infographic></Infographic> -->
 
         <CopyChapter1></CopyChapter1>
         <CopyChapter2></CopyChapter2>
