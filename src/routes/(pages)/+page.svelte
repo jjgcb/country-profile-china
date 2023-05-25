@@ -61,10 +61,10 @@ let locatorCountry = '';
         credits={article.contributors}
         publishDate={new Date(article.pubDate)}
         updatedDate={new Date(article.updatedDate)}
-		image={"images/export-02.jpg"}
+		image={"images/hero.webp"}
 		backgroundPositionY={"bottom"}
 		photoCredit="Graphic: Carbon Brief. Credit: Alamy Stock Photo."
-        photoCreditLink="https://www.tate.org.uk/art/artworks/wilson-llyn-y-cau-cader-idris-n05596">
+        photoCreditLink="">
     </SplashHeadline>
     <StandFirst
         credits={article.contributors}
@@ -78,7 +78,7 @@ let locatorCountry = '';
         <div class="globe" slot="illustration">
             <GlobeLocator country={locatorCountry} mapData={mapdata}></GlobeLocator>
         </div>
-        <p slot="placeholder">PPPPP</p>
+        <p slot="placeholder"></p>
         </ProfileSelector>
         <CopyIntro2></CopyIntro2>
         {#if innerWidth > 1200}

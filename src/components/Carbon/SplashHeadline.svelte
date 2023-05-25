@@ -87,7 +87,7 @@ $: chapter = chapter.map(ch=>{
 		bottom: 5px;
 		right: 0px;
 		text-align: end;
-		color: #333333;
+		color: #f4f4f4;
 		padding-right:var(--s-1);
 		float: right;
 		font-weight: bold;
