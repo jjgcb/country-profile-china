@@ -256,6 +256,12 @@ article h2{
 	font-family: var(--sans-serif-narrow);
 	font-weight: 700;
 }
+@media (max-width:810px){
+	article{
+		padding-left:1em;
+		padding-right: 1em;
+	}
+}
 
 blockquote {
 	width: 100%;
@@ -388,6 +394,12 @@ width: 100%;
 
 footer{
 	margin-block-start: var(--s5);
+}
+
+@media (max-width:550px){
+	nav.box{
+		grid-template-columns: 1fr !important;
+	}
 }
 
 footer a{
