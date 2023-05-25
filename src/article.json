@@ -23,7 +23,7 @@
 		}
 	],
 	"title": "The Carbon Brief Profile: Pakistan",
-	"description": "Template for making pages",
+	"description": "Pakistan is one of the most vulnerable countries to climate change in the world.",
 	"url": "https://interactive.carbonbrief.org",
 	"pubDate": "2023-05-22",
 	"updatedDate": "",
@@ -32,9 +32,9 @@
 		"locale": "en_GB",
 		"type": "article",
 		"image": {
-			"url": "https://interactive.carbonbrief.org/polar-bears-climate-change-what-does-science-say/images/social-images/polar-bear-hero-social.jpg",
-			"width": 1200,
-			"height": 630,
+			"url": "https://interactive.carbonbrief.org/the-carbon-brief-profile-pakistan/images/hero.png",
+			"width": 1550,
+			"height": 1032,
 			"type": "image/png"
 		}
 	},

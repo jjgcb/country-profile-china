@@ -41,7 +41,7 @@ $: chapter = chapter.map(ch=>{
 				{name}
 			</a></li>
 		{/each}
-		<div class="right-chev">&rsaquo;</div>
+		<div class="right-chev">›</div>
 	</ul>
 </nav>
 
@@ -168,9 +168,10 @@ $: chapter = chapter.map(ch=>{
 	.right-chev{
 		position: sticky;
 		right: 0px;
-		padding: 0.1em 0.3em 0.1em 1.2em;
+		padding: 0.4em 0.3em 0.1em 1.2em;
 		color: white;
-		font-size: large;
+		font-size: 3em;
+		line-height: 0;
 		font-weight: bold;
 		background: rgb(74,97,84);
 		background: linear-gradient(90deg, rgba(74,97,84,0) 0%, rgba(74,97,84,0.3477984943977591) 50%, rgba(74,97,84,1) 100%);

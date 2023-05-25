@@ -389,3 +389,7 @@ width: 100%;
 footer{
 	margin-block-start: var(--s5);
 }
+
+footer a{
+	color: #f4f4f4;
+}

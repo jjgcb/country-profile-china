@@ -11,6 +11,7 @@ The country has faced deadly floods every year for the past 13 years, with 2010 
 (The year 1950 was also particularly deadly for flooding in Pakistan, despite less land being affected than in 2010 and 2022. At this time, far fewer flood defences were in place than today, meaning a smaller flood could have a larger human impact.)
 
 <img class="inline tight" src="images/flooding-death-toll-01.png"/>
+<p class="caption tight">Source: Federal Flood Commission.</p>
 
 From June to August 2022, Pakistan received nearly [190% more rain](https://www.bbc.co.uk/news/science-environment-62758811) than its 30-year average. This drove catastrophic flooding affecting 33 million people and killing more than 1,700.
 
@@ -18,7 +19,7 @@ A [study](https://www.carbonbrief.org/climate-change-likely-increased-extreme-ra
 
 Other factors that made the floods so deadly were the proximity of human settlements to flood plains, an outdated river management system and ongoing political and economic instability, the study said.
 
-<img class="wide" src="images/pakistan-triptych.png"/>
+<img class="wide" src="images/pakistan-triptych-02.png"/>
 
 <!-- <img class="inline" src=""/>
 <p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p> -->
