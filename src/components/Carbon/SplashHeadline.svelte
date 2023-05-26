@@ -1,10 +1,12 @@
 <script>
+	import { currentSection, currentSections } from "$carbon/lib/pageStructure";
+  import { browser } from '$app/environment';
 	export let headline = 'Headline goes here';
 	export let image;
 	export let backgroundPositionX = "center"; //center/left/right
 	export let backgroundSize = "cover";
 	export let photoCredit;
-	export let currentSection = "";
+
 
 	let chapter = [
 		{ link: 'politics', name: 'Politics', selected:false },
@@ -18,9 +20,18 @@
 		{ link: 'impacts-and-adaptation', name: 'Impacts and adaptation', selected:false }
 	];
 
-$: chapter = chapter.map(ch=>{
-		ch.selected = (ch.link == currentSection);
-		return ch;
+	currentSections.subscribe(sections=>{
+		sections.forEach(section => {
+			if(section && section.sectionID){
+				chapter = chapter.map(ch=>{
+					ch.selected = (ch.link == section.headingID);
+					if(ch.selected && browser){
+						console.log("scroll to this thing")
+					}
+					return ch;
+				});
+			}			
+		});
 	});
 
 </script>
@@ -36,7 +47,7 @@ $: chapter = chapter.map(ch=>{
 		<div class="sections">Sections: </div>
 		
 		{#each chapter as { link, name, selected }, i}
-			<li><a href="#{link}" class={selected?"highlight":""} rel="noreferrer">
+			<li class={selected?"highlight":""}><a href="#{link}" rel="noreferrer">
 				<!-- {i + 1}:  -->
 				{name}
 			</a></li>
@@ -184,6 +195,7 @@ $: chapter = chapter.map(ch=>{
 		min-width: fit-content;
 		width: auto;
 		border-right: 0.7px solid #333333;
+		transition: background-color 200ms linear;
 	}
 	.chapters li:last-child{
 		padding-right: 5em;
@@ -192,8 +204,13 @@ $: chapter = chapter.map(ch=>{
 		text-decoration: none;
 	}
 
-	.chapters li a.highlight{
-		background-color: red;
+	.chapters li.highlight{
+		background-color: #4a6154;
+		color: var(--color-light-text);
+	}
+
+	.chapters li.highlight a{
+		color: var(--color-light-text);
 	}
 
 	:global(h2){

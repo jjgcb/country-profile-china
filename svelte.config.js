@@ -12,7 +12,8 @@ const config = {
 	preprocess: [
 		mdsvex({ 
 			extensions: ['.md'],
-			rehypePlugins: [slug]
+			rehypePlugins: [slug],
+			layout:"./src/components/MarkdownWrapper.svelte"
 		})
 	]
 };

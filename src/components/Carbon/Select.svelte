@@ -6,7 +6,6 @@
   
     $: {
       value = options[index];
-      console.log(value);
     }
   </script>
   

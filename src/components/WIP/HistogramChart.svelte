@@ -27,7 +27,7 @@
   data.forEach((d)=>{
     shareTotal = shareTotal + shareAccessor(d);
   })
-  console.log(shareTotal);
+
   let x100 = 0;
   //layout method
   $: {

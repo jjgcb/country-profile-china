@@ -1,4 +1,7 @@
 <script>
+import { onMount } from 'svelte';
+import { browser } from '$app/environment';
+
 import SplashHeadline from "$carbon/SplashHeadline.svelte";
 import article from "$article";
 
@@ -17,8 +20,6 @@ import CopyChapter7 from "$copy/7-NatureBased.md";
 import CopyChapter8 from "$copy/8-ClimateFinance.md";
 import CopyChapter9 from "$copy/9-Impacts.md";
 
-import { onMount } from 'svelte';
-import { browser } from '$app/environment';
 import * as topojson from 'topojson-client';
 import GlobeLocator from "$components/GlobeLocator.svelte";
 
@@ -48,9 +49,12 @@ onMount(()=>{
                 mapdata.countryLookup = Object.fromEntries(countryEntries);
                 mapdata.borders = topojson.mesh(topo, topo.objects.countries);
                 mapdata = mapdata;
-            })
+            });
+
+        
     }
 });
+
 let locatorCountry = '';
 </script>
 <!-- Google Tag Manager (noscript) -->
