@@ -29,22 +29,23 @@
       <meta property="article:modified_time" content="{article.modifiedDate}" />
       
       <meta property="og:locale" content="en_GB" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="{article.title}" />
-      <meta property="og:description" content="{article.descrition}" />
-      <meta property="og:url" content="{article.url}" />
-      <meta property="og:site_name" content="Carbon Brief" />
-      <meta property="og:image" content="https://interactive.carbonbrief.org/the-carbon-brief-profile-pakistan/images/hero.png" />
-      <meta property="og:image:width" content="{article.og.image.width}" />
-      <meta property="og:image:height" content="{article.og.image.height}" />
-      <meta property="og:image:type" content="{article.og.image.type}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{article.title}" />
+    <meta property="og:description" content="{article.descrition}" />
+    <meta property="og:url" content="{article.url}" />
+    <meta property="og:site_name" content="Carbon Brief" />
+    <meta property="og:image" content="{article.og.image.url}" />
+    <meta property="og:image:width" content="{article.og.image.width}" />
+    <meta property="og:image:height" content="{article.og.image.height}" />
+    <meta property="og:image:type" content="{article.og.image.type}" />
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@carbonbrief" />
+    <meta name="twitter:site" content="@carbonbrief" />
+    <meta name="twitter:label1" content="By" />
+    <meta name="twitter:data1" content="{contributors}" />
+    <meta name="twitter:image" content="https://interactive.carbonbrief.org/the-carbon-brief-profile-pakistan/images/hero-01.png" />
     
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@carbonbrief" />
-      <meta name="twitter:site" content="@carbonbrief" />
-      <meta name="twitter:label1" content="By" />
-      <meta name="twitter:data1" content="{contributors}" />
-      <meta name="twitter:image" content="https://interactive.carbonbrief.org/the-carbon-brief-profile-pakistan/images/hero.png" />
     
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
