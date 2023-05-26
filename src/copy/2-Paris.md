@@ -6,7 +6,7 @@ At [COP27](https://www.carbonbrief.org/cop27-key-outcomes-agreed-at-the-un-clima
 
 Pakistan’s position as chair came just months after floods, fuelled by rains made [75%](https://www.carbonbrief.org/climate-change-likely-increased-extreme-rainfall-that-led-to-pakistan-flooding/) more intense by climate change, devastated the country. In her [closing remarks](https://www.app.com.pk/national/sherry-rehman-hails-cop-27-for-setting-up-loss-and-damage-fund-as-a-landmark-achievement/) to the conference, Pakistan’s climate minister Sherry Rehman said the fund represented a “down payment in our joined futures and investment in our coming generations”.  
 
-<img class="inline" src="images/inline/sherry-rehman-pakistan-2M9W4BM.webp"/>
+<img class="inline" alt="Sherry Rehman, minister of climate change for Pakistan, at COP27 on 17 November 2022." src="images/inline/sherry-rehman-pakistan-2M9W4BM.webp"/>
 <p class="caption">Sherry Rehman, minister of climate change for Pakistan, at COP27 on 17 November 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Pakistan is signed up to the [Paris Agreement](https://www.carbonbrief.org/interactive-the-paris-agreement-on-climate-change), the international deal aimed at tackling climate change. It [ratified](https://www.dw.com/en/pakistan-ratifies-paris-climate-change-agreement/a-36355815#:~:text=Pakistan%20ratifies%20Paris%20agreement%20%E2%80%93%20DW%20%E2%80%93%2011%2F11%2F2016) the agreement in 2016.

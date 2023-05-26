@@ -15,7 +15,7 @@ The Indian newspaper [Mint](https://www.livemint.com/news/world/pakistans-econom
 <div>
 
 <div class="inset">
-    <img src="images/inflation-pakistan.png">
+    <img src="images/inflation-pakistan.png" alt="Chart showing inflation in Pakistan between 1980-2022">
     <figcaption>Source: <a href="https://www.imf.org/en/Data" target="_blank">IMF</a></figcaption>
 </div>
 
@@ -31,7 +31,7 @@ The country is heavily reliant on importing fossil fuels, which currently make u
 
 Pakistan also suffers from chronic energy access issues, with [one in four](https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=PK) people lacking access to electricity in 2020.
 
-<img class="inline" src="images/inline/powercut-children-studying-pakistan-EF35YN.webp"/>
+<img class="inline" alt="Children study in candle light during a power cut in northwest Pakistan's Peshawar, January 2015." src="images/inline/powercut-children-studying-pakistan-EF35YN.webp"/>
 <p class="caption">Children study in candle light during a power cut in northwest Pakistan's Peshawar, January 2015. Credit: Xinhua / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 All of these factors left Pakistan [highly vulnerable](https://tribune.com.pk/article/81864/22-loans-in-61-years-pakistans-unwavering-habit-of-going-to-the-imf) to the global energy price hike spurred by Russia’s invasion of Ukraine. 
@@ -47,8 +47,8 @@ In January 2023, the country faced a [complete power breakdown](https://www.alja
 In February, energy minister Khurram Dastgir Khan said lack of access to LNG was forcing the country to return to coal and promised to “quadruple” domestically fuelled coal power capacity in response to the crisis, according to [Reuters](https://www.reuters.com/business/energy/pakistan-plans-quadruple-domestic-coal-fired-power-move-away-gas-2023-02-13/). (See [coal, oil and gas for more information](#oil-gas-and-coal).)
 
 <div class="two-col box">
-            <img src="images/gdp-01.png">
-            <img src="images/gdp-02.png">
+            <img src="images/gdp-01.png" alt="Chart showing that Pakistan's GDP is low when compared against other countires with similar emissions.">
+            <img src="images/gdp-02.png" alt="Chart showing that Pakistan is completely overshadowed when it compared against the largest emitting countries.">
             <div class="source">Source: <a href="https://data.worldbank.org/">World Bank</a></div>
         </div>
 
@@ -60,7 +60,7 @@ The energy and economic crisis is heightened still further by political instabil
 
 Former cricket star Imran Khan swept to power in 2018 with the populist party he founded, the [Pakistan Tehreek-e-Insaf](https://insaf.pk/what-is-pti) (PTI) party. But he was ousted in April 2022 after becoming the first prime minister to [lose a no-confidence vote](https://www.aljazeera.com/news/2022/4/9/pakistan-prime-minister-imran-khan-no-confidence-vote) in parliament. His removal led to [widespread protests](https://www.aljazeera.com/news/2022/4/11/imran-khan-removal-as-pm-triggers-protests-across-pakistan).
 
-<img class="inline" src="images/inline/pakistan-march-2022-2M9Y5YX.webp"/>
+<img class="inline" src="images/inline/pakistan-march-2022-2M9Y5YX.webp" alt="Supporters of Pakistan Terhreek-e-Insaf take part in a protest march in Wazirabad, Pakistan, 10 November 2022."/>
 <p class="caption">Supporters of Pakistan Terhreek-e-Insaf take part in a protest march in Wazirabad, Pakistan, 10 November 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Shehbaz Sharif of the centre-right [Pakistan Muslim League (N)](https://pmln.org/) party was [elected](https://www.aljazeera.com/news/2022/4/11/shehbaz-sharif-elected-as-pakistans-new-prime-minister-2) as the replacement a few days later, causing tension with Khan’s remaining supporters in parliament. Sharif’s party is a member of the [Pakistan Democratic Movement](https://tribune.com.pk/story/2275180/politics-of-alliances-and-pdm), an alliance of [more than a dozen](https://en.wikipedia.org/wiki/Pakistan_Democratic_Movement#Parties) political parties that opposed Khan’s leadership.
@@ -73,7 +73,7 @@ A poll of 2,000 people conducted by [Gallup Pakistan](https://www.gallup.com.pk/
 
 Both [Khan](https://www.reuters.com/business/environment/rich-states-havent-done-enough-environment-pakistan-pm-says-2021-06-04/) and [Sharif](https://www.theguardian.com/commentisfree/2023/jan/06/pakistan-floodwaters-climate-disasters-international-aid) have spoken passionately about the impact of climate change on Pakistan – and the need for [historic large emitters](https://www.carbonbrief.org/analysis-which-countries-are-historically-responsible-for-climate-change/) such as the US and UK to pay for their pollution.
 
-<img class="inline" src="images/inline/shehbaz-sharif-cop27-2M9YTAW.webp"/><p class="caption">Muhammad Shehbaz Sharif, prime minister of Pakistan, speaks at COP27 on 8 November 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+<img class="inline" alt="Muhammad Shehbaz Sharif, prime minister of Pakistan, speaks at COP27 on 8 November 2022." src="images/inline/shehbaz-sharif-cop27-2M9YTAW.webp"/><p class="caption">Muhammad Shehbaz Sharif, prime minister of Pakistan, speaks at COP27 on 8 November 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 While in power, Khan set out a number of policies on transitioning to renewable power and using “nature-based solutions” to tackle climate change (discussed in more detail below). 
 

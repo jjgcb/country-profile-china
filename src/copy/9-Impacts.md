@@ -10,7 +10,7 @@ The country has faced deadly floods every year for the past 13 years, with 2010 
 
 (The year 1950 was also particularly deadly for flooding in Pakistan, despite less land being affected than in 2010 and 2022. At this time, far fewer flood defences were in place than today, meaning a smaller flood could have a larger human impact.)
 
-<img class="inline tight" src="images/flooding-death-toll-01.png"/>
+<img class="inline tight" alt="Graphic showing that there have been deadly floods every year in Pakistan since 2010." src="images/flooding-death-toll-01.png"/>
 <p class="caption tight">Source: Federal Flood Commission.</p>
 
 From June to August 2022, Pakistan received nearly [190% more rain](https://www.bbc.co.uk/news/science-environment-62758811) than its 30-year average. This drove catastrophic flooding affecting 33 million people and killing more than 1,700.
@@ -19,10 +19,7 @@ A [study](https://www.carbonbrief.org/climate-change-likely-increased-extreme-ra
 
 Other factors that made the floods so deadly were the proximity of human settlements to flood plains, an outdated river management system and ongoing political and economic instability, the study said.
 
-<img class="wide" src="images/pakistan-triptych-02.png"/>
-
-<!-- <img class="inline" src=""/>
-<p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p> -->
+<img class="wide" alt="Maps showing that Pakistan received nearly 190% more rain than its 30-year average between June and August 2022." src="images/pakistan-triptych-02.png"/>
 
 In February 2023, the [Guardian](https://www.theguardian.com/global-development/2023/feb/08/pakistan-families-hungry-and-homeless-floods) reported that thousands of families remain homeless and without livelihoods months after the floods.
 
@@ -32,14 +29,11 @@ In January 2023, Pakistan and the UN held a [joint summit](https://www.undp.org/
 
 [Climate Home News](https://www.climatechangenews.com/2023/01/17/world-bank-adaptation-funds-slept-through-pakistans-record-flooding/) also reported that the World Bank was accused of “sleeping through” the floods by failing to spend pledged finance on new flood defences for Karachi ahead of the disaster. 
 
-<!-- <img class="inline" src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp"/>
-<p class="caption">A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p> -->
-
 <div class="two-col box wide">
-            <img src="images/inline/flooding-pakistan-2022-2MAP6MG.webp">
-            <img src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp">
-            <p class="caption">Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
-            <p class="caption">A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+            <img alt="Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022." src="images/inline/flooding-pakistan-2022-2MAP6MG.webp">
+            <img alt="A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022." src="images/inline/flooding-refuge-pakistan-2MAFAG0.webp">
+            <p class="caption"><span class="mobile-caption">Top: </span>Homes are surrounded by floodwaters in Sohbat Pur city, a district of Pakistan's southwestern Baluchistan province, on 30 August 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+            <p class="caption"><span class="mobile-caption">Bottom: </span>A woman takes refuge after leaving her flood-hit homes in Jaffarabad, a district of Baluchistan province, Pakistan, on 21 September 2022. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
         </div>
 
 Additionally, [Climate Home News](https://www.climatechangenews.com/2023/02/09/un-budget-cuts-hindered-response-to-pakistans-extreme-floods/) reported that cuts to the UN Office for the Coordination of Humanitarian Affairs (OCHA) Pakistan branch left them unable to respond adequately to the 2023 disaster. The publication reported:
@@ -54,7 +48,7 @@ As well as experiencing river and flash flooding, the country’s many mountains
 
 Pakistan contains more glacier ice than [anywhere else in the world](https://www.climatechangenews.com/2023/02/09/un-budget-cuts-hindered-response-to-pakistans-extreme-floods/) outside of the polar regions.
 
-<img class="inline" src="images/inline/glacier-hindu-kush-pakistan-2A4TWAC.webp"/>
+<img class="inline" alt="The Chiatibo glacier in the Hindu Kush mountain range in the Chitral District of Khyber-Pakhunkwa Province in Pakistan." src="images/inline/glacier-hindu-kush-pakistan-2A4TWAC.webp"/>
 <p class="caption">The Chiatibo glacier in the Hindu Kush mountain range in the Chitral District of Khyber-Pakhunkwa Province in Pakistan. Credit: PA Images / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Glaciers – which are essentially frozen rivers – are [fast disappearing](https://www.carbonbrief.org/half-of-worlds-glaciers-to-disappear-with-1-5c-of-global-warming/) because of climate change. [Research](https://www.carbonbrief.org/limiting-global-warming-to-1-5c-could-save-two-thirds-of-asias-glacier-ice/) found that two-thirds of glacier ice in the High Mountain Asia region, which covers part of Pakistan along with [neighbouring countries](https://nsidc.org/data/highmountainasia#:~:text=The%20region%20covers%20parts%20of,Uzbekistan%2C%20Kyrgyzstan%2C%20and%20Tajikistan.), could vanish by the end of the century under a scenario of very high emissions.
@@ -73,8 +67,8 @@ The highest temperature recorded in Pakistan is [53.7C](https://tribune.com.pk/s
 
 In 2022, Pakistan experienced an unusually early heatwave, recording temperatures of [49C](https://www.carbonbrief.org/climate-change-made-india-and-pakistans-2022-early-heatwave-30-times-more-likely%ef%bf%bc/) in April. This heat, which killed 90 people across Pakistan and India, was made 30 times more likely by human-caused climate change, according to a [rapid analysis](https://www.carbonbrief.org/climate-change-made-india-and-pakistans-2022-early-heatwave-30-times-more-likely%ef%bf%bc/).
 
-<img class="inline" src="images/inline/cooling-off-heatwave-pakistan-2022-2J2YC0A.webp"/>
-<p class="caption">A young man pour water over himself during a heatwave in Hyderabad, Pakistan, on 4 April 2022. Credit: Zuma Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
+<img class="inline" alt="A young man pours water over himself during a heatwave in Hyderabad, Pakistan, on 4 April 2022." src="images/inline/cooling-off-heatwave-pakistan-2022-2J2YC0A.webp"/>
+<p class="caption">A young man pours water over himself during a heatwave in Hyderabad, Pakistan, on 4 April 2022. Credit: Zuma Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Just 13% of people in Pakistan’s cities have access to air conditioning, according to [Asia News Network](https://asianews.network/who-is-profiting-from-the-extreme-heat-in-urban-pakistan/). The figure is just 2% in rural areas. 
 
@@ -89,3 +83,17 @@ The country is also at risk from tropical storms. In 1970, Pakistan experienced 
 Pakistan has the [third-highest](https://pakobserver.net/128000-people-die-annually-in-pakistan-due-to-air-pollution-related-ailments/#:~:text=Air%20pollution%20is%20a%20silent,ambient%20air%20pollution%20(smog).) levels of air pollution in the world after China and India. Each year, 128,000 people die prematurely due to toxic smog, mainly driven by fossil fuel use for power, industry and transport.
 
 In 2021, Pakistan [announced](https://www.unep.org/gan/news/press-release/pakistan-develop-national-adaptation-plan-climate-change) it was developing its first National Adaptation Plan in order to prepare for the impacts of climate change. It is due to be published this year.
+
+<style>
+.mobile-caption{
+    display:none;
+    font-weight:900;
+}
+
+@media (max-width:650px){
+    .mobile-caption{
+        display:initial;
+    }
+}
+
+</style>

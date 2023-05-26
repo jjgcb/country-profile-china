@@ -2,8 +2,6 @@
 import SplashHeadline from "$carbon/SplashHeadline.svelte";
 import article from "$article";
 
-import Infographic from '$carbon/Infographic.svelte';
-
 import ProfileSelector from "$carbon/ProfileSelector.svelte"
 
 import StandFirst from '$carbon/StandfirstCredits.svelte';
@@ -55,6 +53,10 @@ onMount(()=>{
 });
 let locatorCountry = '';
 </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VXGM92"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <svelte:window bind:innerWidth />
     <SplashHeadline 
         headline={article.title} 
@@ -82,13 +84,12 @@ let locatorCountry = '';
         </ProfileSelector>
         <CopyIntro2></CopyIntro2>
         {#if innerWidth > 1200}
-            <img class="wide" src="images/pakistan-infographic-wide-01.png"/>
+            <img class="wide" src="images/pakistan-infographic-wide-01.png" alt="Pakistan graphic showing national emissions and energy consumption."/>
         {:else if innerWidth > 600}
-            <img class="inline" src="images/pakistan-infographic-square-01.png">
+            <img class="inline" src="images/pakistan-infographic-square-01.png" alt="Pakistan graphic showing national emissions and energy consumption.">
         {:else}
-            <img class="inline mobile" src="images/pakistan-infographic-mobile-01.png">
+            <img class="inline mobile" src="images/pakistan-infographic-mobile-01.png" alt="Pakistan graphic showing national emissions and energy consumption.">
         {/if}
-        <!-- <Infographic></Infographic> -->
 
         <CopyChapter1></CopyChapter1>
         <CopyChapter2></CopyChapter2>
@@ -116,63 +117,4 @@ let locatorCountry = '';
         margin: 0 auto;
         margin-top:var(--s1);
     }
-    .fullbleed{
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        background-color: var(--color-dark-background);
-    }
-    .fullbleed img{
-        /* width:100%; */
-        box-sizing: content-box;
-        margin-inline: auto;
-    }
-    
-    figcaption{
-        color: var(--color-light-text);
-        width: var(--readable-max-width);
-    }
 </style>
-
-<!-- <ChartFrame title="A bar chart" subtitle="">
-            <BarChart
-                margin={{top:0,left:200,bottom:60,right:10}}
-                data={data.costliestWeatherDisasters}
-                valueAccessor={d=>Number(d["Economic cost (bn US$)"])}
-                labelAccessor={d=>d["Event"]}
-            >
-            </BarChart>
-        </ChartFrame> -->
-
- <!-- <ChartFrame title="A categorical key" source="" subtitle="">
-            <CategoryKey
-                label="Countries with a climate finance"
-                data={[{key:'surplus',value:lightBlue},{key:'shortfall',value:red}]}
-                vertical={true}>
-            </CategoryKey>
-        </ChartFrame> -->
-        <!-- <ChartFrame title="A data download link" source="" subtitle="">
-            <DataDownload dataSet={data.costliestWeatherDisasters}></DataDownload>
-        </ChartFrame> -->
-        <!-- <ChartFrame title="A continuous colour key" source="" subtitle="">
-            <ContinuousColorKey
-                unit={"%"}
-            >
-            </ContinuousColorKey>
-        </ChartFrame> -->
-        <!-- <h2 id="html-css-ref">HTML/ CSS quick reference</h2>
-        <hr>
-        <h1>Level 1 heading</h1>
-        <h2>Level 2 heading</h2>
-        <h3>Level 3 heading</h3>
-        <h4>Level 4 heading</h4>
-        <hr>
-        <ColorPalette></ColorPalette>
-        <SizeReference></SizeReference>
-        <figure class="fullbleed stack box">
-            <img src="images/place-holder.png" alt="placeholder">
-            <figcaption class="center">A place holder image with a full bleed background.</figcaption>
-        </figure> -->

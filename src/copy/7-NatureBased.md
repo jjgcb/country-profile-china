@@ -16,7 +16,7 @@ In September, Pakistan’s the [Nation](https://www.nation.com.pk/14-Sep-2022/bi
 
 Following this, the [Tribune](https://tribune.com.pk/story/2379434/budget-cuts-for-plantation-drives-put-question-mark-on-priorities) reported in October that Sharif’s government had renamed the project “Green Pakistan” and slashed its annual budget from $49m to $33m.
 
-<img class="inline" src="images/inline/tree-planting-pakistan-2NF1T9N.webp"/>
+<img class="inline" alt="A volunteer plants red mangrove trees near the Arabian Sea, south of Karachi, Pakistan." src="images/inline/tree-planting-pakistan-2NF1T9N.webp"/>
 <p class="caption">A volunteer plants red mangrove trees near the Arabian Sea, south of Karachi, Pakistan. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Pakistan’s 2021 climate pledge references several other large-scale nature-based projects.

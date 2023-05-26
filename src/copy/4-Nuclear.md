@@ -8,7 +8,7 @@ The second of the Karachi reactors – a [1,100MW plant](https://www.bloomberg.c
 
 According to the [Oxford Institute for Energy Studies](https://www.oxfordenergy.org/publications/nuclear-power-in-china-its-role-in-national-energy-policy/), the two Karachi plants are part of the [China-Pakistan economic corridor](https://cpec.gov.pk/), a 3,000km infrastructure network project in Pakistan that is a major plank in China’s wider [Belt and Road Initiative](https://www.chathamhouse.org/2021/09/what-chinas-belt-and-road-initiative-bri). 
 
-<img class="inline" src="images/inline/nuclear-plant-pakistan-2FTJEAK.webp"/>
+<img class="inline" alt="Karachi Nuclear Power Plant Unit-2 (K-2), Karachi, Pakistan." src="images/inline/nuclear-plant-pakistan-2FTJEAK.webp"/>
 <p class="caption">Karachi Nuclear Power Plant Unit-2 (K-2), Karachi, Pakistan. Credit: Xinhua / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Nuclear power provided around 9% of Pakistan’s electricity in 2020, according to the [International Energy Agency](https://www.iea.org/countries/pakistan) (IEA). This rose to around 14% in 2022 with the opening of new plants, according to the thinktank [Ember](https://ember-climate.org/countries-and-regions/countries/pakistan/).

@@ -4,7 +4,7 @@ A quarter of people in Pakistan lack access to electricity. Instead, many rely o
 
 This is particularly true for food preparation, a task mostly undertaken by women. Only [half](https://data.worldbank.org/indicator/EG.CFT.ACCS.ZS?locations=PK) of Pakistan’s population have access to “clean cooking” and the rest rely on polluting and inefficient cookstoves.
 
-<img class="inline" src="images/inline/wood-burning-cooking-pakistan-DF47N2.webp"/>
+<img class="inline" alt="A woman cooks on a fire inside her house in Gilgit-Baltistan, Pakistan." src="images/inline/wood-burning-cooking-pakistan-DF47N2.webp"/>
 <p class="caption">A woman cooks on a fire inside her house in Gilgit-Baltistan, Pakistan. Credit: Steve Davey Photography / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 According to the South Asian news agency [ANI](https://www.aninews.in/news/world/asia/rapid-deforestation-puts-pakistans-climate-policies-in-jeopardy20210609182354/), 68% of people in Pakistan rely on firewood. This is one of the major drivers of deforestation in the country, alongside urbanisation and food and commodity production. ([Illegal logging](https://www.latimes.com/archives/la-xpm-2010-oct-13-la-fg-pakistan-logging-20101013-story.html) by the Taliban has also contributed.)
@@ -17,7 +17,7 @@ Deforestation has impacted Pakistan’s unique biodiversity.
 
 The country is [home](https://www.cbd.int/countries/profile/?country=pk#:~:text=Pakistan%20has%20195%20mammal%20species,(over%20400%20being%20endemic)) to: 195 mammal species, six of which are “endemic” (only found in Pakistan); 668 birds, 25 of which are endemic; 177 reptiles, 13 of which are endemic; 22 amphibians, nine of which are endemic; 198 freshwater fishes, 29 of which are endemic, 5,000 invertebrates; and 5,700 flowering plants, of which 400 are endemic.
 
-<img class="inline" src="images/inline/dolphin-indus-river-pakistan-2P9BATC.webp"/>
+<img class="inline" alt="Volunteers rescue a dolphin stuck in a canal off the Indus river, near Karachi, Pakistan." src="images/inline/dolphin-indus-river-pakistan-2P9BATC.webp"/>
 <p class="caption">Volunteers rescue a dolphin stuck in a canal off the Indus river, near Karachi, Pakistan. Credit: Associated Press / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 But, according to the UN’s [Convention on Biological Diversity](https://www.cbd.int/countries/profile/?country=pk#:~:text=Pakistan%20has%20195%20mammal%20species,(over%20400%20being%20endemic)), nature in Pakistan faces an “impending national disaster” because of human activities and degradation of habitats.
@@ -34,7 +34,7 @@ The country has the world’s largest continuous irrigation system covering almo
 
 The agricultural sector is also the largest consumer of freshwater, accounting for 95% of total withdrawals, according to Pakistan’s 2021 [international climate pledge](https://unfccc.int/sites/default/files/NDC/2022-06/Pakistan%20Updated%20NDC%202021.pdf).
 
-<img class="inline" src="images/inline/melon-farming-pakistan-G3J2XH.webp"/>
+<img class="inline" alt="Pakistani farmers busy loading watermelons." src="images/inline/melon-farming-pakistan-G3J2XH.webp"/>
 <p class="caption">Pakistani farmers busy loading watermelons. Credit: Pacific Press Media Production Corp. / <a href="https://www.alamy.com/">Alamy Stock Photo</a>.</p>
 
 Pakistan is among the world’s top 10 producers of wheat, cotton, sugarcane, mangoes, dates and kinnow oranges – and ranked 10th for rice production, according to the FAO.
